@@ -1,0 +1,3063 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#d8e9e8"><meta name="description" content="Three IOE practice tests with simple explanations and useful word notes."><title>IOE Practice · Abhi-Uyen</title>
+<style>
+:root{--ink:#493d36;--muted:#746b65;--paper:#fcfbf7;--line:#dddcd3;--blue:#d8e9e8;--blue-dark:#385e60;--pink:#f0ded7;--lilac:#e9e3ef;--yellow:#f3ebce;--green:#e0eadb;--wrong:#fae4dd;--radius:23px}*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:16px/1.65 Arial,Helvetica,sans-serif}button,input,select{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #527b7d;outline-offset:4px}button:disabled{cursor:default}button{touch-action:manipulation}h1,h2,h3,p{margin:0}h1{font-size:clamp(30px,4vw,44px);font-weight:500;letter-spacing:-1.5px;line-height:1.15}h2{font-size:24px;line-height:1.3;font-weight:500;letter-spacing:-.5px}h3{font-size:16px;font-weight:600}.shell{max-width:1190px;margin:auto;padding:0 30px}.mast{padding-top:30px}.mast-inner{display:flex;align-items:center;justify-content:space-between;gap:25px;border-bottom:1px solid var(--line);padding:0 0 24px}.identity{display:flex;align-items:center;gap:23px}.identity p{color:var(--muted);font-size:13px;letter-spacing:.8px;margin-top:8px}.doodle{width:172px;height:106px;flex-shrink:0}.tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.lang{display:flex;gap:10px;align-items:center;border:1px solid #c7cfca;border-radius:50px;padding:9px 14px;background:#fff;font-size:13px}.switch{width:30px;height:18px;background:#d5d5cd;border-radius:20px;position:relative;flex-shrink:0}.switch:after{content:'';position:absolute;width:12px;height:12px;border-radius:50%;background:white;top:3px;left:3px;transition:transform .2s}.lang[aria-pressed=true] .switch{background:#507575}.lang[aria-pressed=true] .switch:after{transform:translateX(12px)}.vi{display:none;color:#6b625d;font-size:14px;line-height:1.65;margin-top:7px}body.show-vi .vi{display:block}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;padding:25px 0}.test-tab{border:1px solid transparent;border-radius:18px;text-align:left;padding:15px 22px;position:relative;transition:transform .15s}.test-tab:hover{transform:translateY(-2px)}.test-tab:nth-child(1){background:var(--blue)}.test-tab:nth-child(2){background:var(--pink)}.test-tab:nth-child(3){background:var(--lilac)}.test-tab[aria-selected=true]{border:1px solid var(--ink);box-shadow:0 0 0 2px var(--paper),0 0 0 3px var(--ink)}.test-tab strong{font-size:18px;font-weight:500;display:block}.test-tab small{font-size:12px;color:#645d58}.tab-tick{position:absolute;right:20px;top:21px;font-size:18px}.layout{display:grid;grid-template-columns:246px 1fr;gap:24px;align-items:start}.side{background:#f1f3ed;border:1px solid #e2e5dc;border-radius:var(--radius);padding:23px}.micro{text-transform:uppercase;letter-spacing:1.9px;font-size:10px;font-weight:700;color:var(--muted)}.score{display:flex;align-items:baseline;gap:8px;margin:9px 0 8px}.score strong{font-size:31px;line-height:1.2;font-weight:500;letter-spacing:-1px}.score span{font-size:12px;color:var(--muted)}.meter{height:5px;border-radius:8px;background:#d9ded4;margin:12px 0 7px;overflow:hidden}.meter span{display:block;height:100%;background:#68827a}.side-note{font-size:11px;color:var(--muted)}.view-tabs{display:flex;gap:6px;margin:23px 0 0;border-bottom:1px solid var(--line);padding-bottom:12px}.view-tabs button{font-size:12px;border:0;background:none;padding:7px 9px;border-radius:9px}.view-tabs button.active{background:#fff;box-shadow:0 1px 4px #493d3610}.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:16px}.dot{background:#fff;border:1px solid #d5d9d0;border-radius:9px;min-width:0;padding:6px 0;min-height:34px;font-size:11px}.dot.current{outline:2px solid #526e6a;outline-offset:1px}.dot.correct{background:#cbded2;border-color:#9bb5a6}.dot.wrong{background:#efcfc3;border-color:#d0a898}.dot.reviewed{background:#e5dcf0;border-color:#c4b6d4}.dot.special:after{content:'·';padding-left:1px}.legend{font-size:10px;color:var(--muted);margin-top:16px;display:flex;flex-wrap:wrap;gap:8px}.legend span{display:inline-flex;align-items:center;gap:4px}.legend i{width:7px;height:7px;border-radius:50%;background:#cbded2}.legend span:nth-child(2) i{background:#efcfc3}.legend span:nth-child(3) i{background:#dcd4e5}.text-btn{background:none;border:0;text-decoration:underline;text-underline-offset:4px;font-size:11px;color:var(--muted);padding:0}.side .text-btn{margin-top:24px}.workspace{min-width:0}.panel{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:29px 34px;box-shadow:0 10px 30px #493d3603}.panel-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:23px}.tag{background:var(--yellow);border-radius:50px;font-size:10px;letter-spacing:.6px;padding:5px 11px}.question{font-size:21px;line-height:1.65;letter-spacing:-.2px;white-space:pre-line}.question.reading{font-size:17px;line-height:1.85;letter-spacing:0}.question img{display:block;max-width:105px;image-rendering:auto;margin:12px 0 18px}.passage{font-size:16px;line-height:1.85;white-space:pre-line;padding:18px 21px;background:#f6f7f2;border-radius:14px;margin-bottom:20px}.directions{font-size:12px;color:var(--muted);margin:16px 0 10px}.choices{display:grid;gap:10px;margin-top:22px}.choice{border:1px solid var(--line);border-radius:13px;background:#fff;text-align:left;display:flex;align-items:center;gap:13px;padding:13px 16px;min-height:55px;font-size:15px;line-height:1.55}.choice .letter{display:flex;align-items:center;justify-content:center;width:27px;height:27px;border-radius:50%;background:#f1f0eb;color:#786e67;font-size:11px;flex-shrink:0}.choice.selected{background:#eef5f4;border-color:#749392}.choice.good{background:#e3eee6;border-color:#9db8a7}.choice.bad{background:#f9e8e1;border-color:#d2afa2}.choice:hover:not(:disabled){border-color:#8e9b96}.choice:disabled{opacity:1;color:var(--ink)}.field{width:100%;border:1px solid #c7cfca;border-radius:13px;padding:13px 16px;color:var(--ink);font-size:17px;background:#fcfcfa;min-height:53px}.field:disabled{opacity:1;color:var(--ink)}.field::placeholder{color:#9b948e;font-size:14px}.entry{margin-top:23px}.builder{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}.chunk{background:#f0eef5;border:1px solid #d5cede;border-radius:10px;padding:8px 12px;font-size:14px;line-height:1.5}.chunk:disabled{opacity:.35}.builder-tools{display:flex;gap:18px;margin:10px 0}.actions{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-top:25px}.primary{background:#49676a;color:#fff;border:1px solid #49676a;border-radius:50px;padding:11px 25px;font-size:13px;min-height:45px}.primary:disabled{opacity:.4}.secondary{background:#fff;border:1px solid #d5d8d0;border-radius:50px;padding:10px 18px;font-size:13px;min-height:44px}.primary:hover:not(:disabled){background:#36595d}.nav-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:17px 0 0}.nav-row span{font-size:12px;color:var(--muted)}.feedback{border-radius:16px;padding:21px 23px;margin-top:24px;background:#eaf2eb;border:1px solid #d6e3d8}.feedback.wrong{background:#fbefea;border-color:#ebd7cd}.feedback.review{background:#f1edf6;border-color:#ddd4e7}.result-title{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:700;margin-bottom:9px}.answer-line{font-size:15px;margin-bottom:11px}.feedback p{font-size:14px;line-height:1.7}.feedback .vi{font-size:14px}.note{margin-top:18px;padding-top:16px;border-top:1px solid #c9d3c7}.note .micro{margin-bottom:8px;display:block;font-size:9px}.note strong{font-size:16px;font-weight:600}.note p{color:#635d55;font-size:13px;margin-top:3px}.note .vi{font-size:13px}.star{float:right;background:#fff9;border:1px solid #cbd0c4;border-radius:50px;padding:4px 12px;font-size:11px}.status-note{font-size:12px;color:var(--muted);margin-top:16px}.saved-hint{font-size:11px;color:var(--muted);margin:19px 3px}.footer{text-align:center;font-size:12px;letter-spacing:.8px;color:var(--muted);padding:30px 15px 32px}.review-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:20px}.word-list{display:grid;grid-template-columns:1fr 1fr;gap:15px}.word-card{background:#f4f4ef;border:1px solid #e2e3da;border-radius:15px;padding:17px 20px}.word-card:nth-child(3n+2){background:#f3edf5}.word-card:nth-child(3n){background:#f7efe7}.word-card strong{font-size:16px}.word-card p{font-size:13px;color:var(--muted);margin-top:6px}.word-card small{font-size:10px;color:var(--muted)}.empty{padding:45px 10px;text-align:center}.empty p{font-size:14px;color:var(--muted);margin-top:10px}select{background:#fff;border:1px solid #ccd1c9;border-radius:9px;font-size:12px;color:var(--ink);padding:7px;width:100%;margin-top:15px}.sr-only{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.completion{background:var(--yellow);padding:15px 20px;border-radius:13px;font-size:13px;margin:0 0 17px}dialog{border:1px solid var(--line);border-radius:20px;padding:28px;max-width:400px;width:90%;color:var(--ink)}dialog::backdrop{background:#2e39374d}dialog p{margin:12px 0 22px;font-size:14px}dialog .actions{margin:0}button u{text-underline-offset:3px;text-decoration-thickness:2px}.help{font-size:12px;max-width:340px}.notes-label{line-height:1.3}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#493d36;color:white;border-radius:12px;padding:10px 18px;font-size:12px;z-index:5;max-width:90%}.hide{display:none!important}@media(min-width:1000px){.side{position:sticky;top:20px}}@media(max-width:850px){.shell{padding:0 20px}.doodle{width:125px}.identity{gap:10px}.layout{grid-template-columns:205px 1fr;gap:17px}.side{padding:18px 15px}.panel{padding:24px}.question{font-size:19px}.word-list{grid-template-columns:1fr}.test-tab{padding:15px 18px}.grid{gap:5px}.dot{font-size:10px}.mast-inner{gap:10px}.lang{font-size:12px;padding:9px 10px}.identity p{font-size:11px}}@media(max-width:640px){.shell{padding:0 15px}.mast{padding-top:21px}.mast-inner{align-items:flex-start;padding-bottom:16px}.identity{align-items:flex-start}.identity p{font-size:10px;letter-spacing:.1px}.doodle{width:72px;height:69px;margin-top:0}.lang{font-size:10px;gap:6px;padding:8px}.tools{padding-top:2px}h1{font-size:29px}.tabs{padding:20px 0;gap:10px}.test-tab{padding:12px 14px;border-radius:14px}.test-tab strong{font-size:15px}.test-tab small{font-size:10px}.tab-tick{right:11px;top:12px;font-size:13px}.layout{grid-template-columns:1fr;gap:15px}.side{padding:15px 18px;border-radius:18px}.side-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.score{margin:0;gap:5px}.score strong{font-size:24px}.side-note{font-size:10px}.side .meter{margin-top:10px}.side .micro{font-size:9px}.view-tabs{margin:10px 0 0;padding-bottom:8px}.side .text-btn{margin-top:13px}.grid{grid-template-columns:repeat(10,1fr);gap:6px;margin-top:13px}.dot{min-height:30px;border-radius:7px}.legend{margin-top:12px}.panel{border-radius:18px;padding:23px 20px}.panel-bar{margin-bottom:18px}.question{font-size:19px}.passage{font-size:14px;padding:15px}.choice{font-size:14px;padding:12px}.feedback{padding:18px}.actions{gap:8px}.primary{padding:10px 19px}.secondary{padding:9px 13px}.saved-hint{margin-top:14px;font-size:10px}.footer{padding:24px 0}.grid-wrap.collapsed{display:none}.mobile-toggle{display:inline-block!important}.panel h2{font-size:22px}.nav-row span{font-size:10px}.help{font-size:11px}}.mobile-toggle{display:none}.reduced{font-size:12px;color:var(--muted)}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media(max-width:640px){.side{position:relative}.side:has(.grid-wrap.collapsed) #filter{display:none}.side:has(.grid-wrap.collapsed) #reset{position:absolute;right:18px;top:107px;margin:0}.side:has(.grid-wrap.collapsed) .view-tabs{border:0;margin-right:77px;padding-bottom:0}}
+
+.tools{flex-direction:column;align-items:flex-end;gap:7px}.sound{justify-content:center;min-width:135px;padding:6px 14px;font-size:12px}.sound[aria-pressed=false]{color:var(--muted);background:#f4f3ef}@media(max-width:640px){.tools{gap:6px}.sound{min-width:106px;padding:5px 9px;font-size:10px}}
+
+/* Larger reading type, retaining the compact pastel layout. */
+body{font-size:18px}.shell{max-width:1250px}.layout{grid-template-columns:260px 1fr}.question{font-size:26px;line-height:1.65}.passage,.question.reading{font-size:20px;line-height:1.85}.choice{font-size:19px;padding:15px 17px;min-height:62px}.choice .letter{font-size:14px;width:31px;height:31px}.field{font-size:21px;min-height:60px}.field::placeholder{font-size:17px}.feedback p,.feedback .vi{font-size:18px;line-height:1.75}.answer-line{font-size:19px}.result-title{font-size:18px}.note strong{font-size:20px}.note p,.note .vi{font-size:17px}.chunk{font-size:18px;padding:10px 14px}.directions,.status-note{font-size:16px}.vi{font-size:17px}.primary,.secondary{font-size:16px}.micro{font-size:12px;letter-spacing:1.2px}.tag{font-size:12px}.score span{font-size:14px}.side-note{font-size:13px}.view-tabs button{font-size:15px}.dot{font-size:14px;min-height:38px}.legend{font-size:12px}.text-btn{font-size:14px}select{font-size:15px}.test-tab strong{font-size:22px}.test-tab small{font-size:14px}.word-card strong,.word-card h3{font-size:20px}.word-card p,.word-card .vi{font-size:17px}.word-card small{font-size:13px}.reduced,.nav-row span,.saved-hint,.footer{font-size:14px}.star{font-size:14px}.note .micro{font-size:11px}.feedback .adaptation{font-size:13px;color:var(--muted);margin-top:12px}.side .view-tabs{gap:2px}.view-tabs button{padding:7px}.lang{font-size:14px}.sound{font-size:13px}
+@media(max-width:850px) and (min-width:641px){.layout{grid-template-columns:220px 1fr;gap:17px}.side{padding:18px 13px}.view-tabs button{font-size:13px}.question{font-size:24px}.panel{padding:25px}.dot{font-size:12px}}
+@media(max-width:640px){body{font-size:17px}.layout{grid-template-columns:1fr}.question{font-size:23px}.passage,.question.reading{font-size:18px}.choice{font-size:18px;padding:13px;min-height:58px}.field{font-size:20px}.feedback p,.feedback .vi{font-size:17px}.note p,.note .vi{font-size:16px}.note strong{font-size:19px}.chunk{font-size:17px}.directions,.status-note{font-size:15px}.vi{font-size:16px}.primary,.secondary{font-size:15px}.panel-bar{flex-wrap:wrap;gap:8px}.micro{font-size:11px}.tag{font-size:11px}.side .micro{font-size:11px}.side-note{font-size:12px}.side:has(.grid-wrap.collapsed) #reset{top:111px;font-size:12px}.view-tabs button{font-size:14px}.dot{font-size:12px;min-height:34px}.legend{font-size:11px}.test-tab strong{font-size:18px}.test-tab small{font-size:12px}.lang{font-size:12px;padding:8px}.sound{font-size:12px;min-width:113px;padding:6px 9px}.identity{min-width:0;gap:4px}.identity .doodle{width:49px;height:64px}h1{font-size:30px}.identity p{font-size:11px}.nav-row{flex-wrap:wrap}.nav-row span{font-size:12px;order:3;width:100%;text-align:center}.saved-hint,.footer{font-size:12px}.panel{padding:23px 19px}.side:has(.grid-wrap.collapsed) .view-tabs{margin-right:90px}.word-list{grid-template-columns:1fr}}
+
+</style></head>
+<body>
+<header class="shell mast"><div class="mast-inner"><div class="identity"><div><h1>IOE Practice</h1><p>Read. Think. Try again.</p><p class="vi" lang="vi">Ôn thi IOE · Đọc, suy nghĩ và luyện lại.</p></div>
+<svg class="doodle" viewBox="0 0 210 125" fill="none" aria-hidden="true"><ellipse cx="105" cy="109" rx="82" ry="8" fill="#e7ebe0"/><circle cx="158" cy="32" r="23" fill="#f0e8c9"/><path d="M24 51Q25 43 34 45l52 8 49-9q7-1 8 7l-3 48-51 12-60-10z" fill="#e8e1ec"/><path d="m31 42 57 11 48-9-3 48-46 12-56-10z" fill="#fffdf7" stroke="#65554b" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/><path d="m88 53-1 51M41 57l34 6M42 68l31 6M42 80l23 5M98 63l28-7M97 75l25-6M97 87l21-5" stroke="#8a8175" stroke-width="1.3" stroke-linecap="round"/><path d="m143 65 8 36 24-3 1-38z" fill="#d8e8e5" stroke="#65554b" stroke-width="1.8" stroke-linejoin="round"/><path d="M160 64q-3-19 8-33m-8 21q-19-6-17-21 17 1 17 21Zm4-9q3-19 19-17-1 16-19 17Z" fill="#c6d6be" stroke="#65554b" stroke-width="1.5" stroke-linecap="round"/><path d="m49 25 6-3 32 25-5 6-32-25z" fill="#efd2c3" stroke="#65554b" stroke-width="1.6" stroke-linejoin="round"/><path d="m87 47 6 10-11-4" stroke="#65554b" stroke-width="1.6"/><path d="m107 20 2-6 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#e2e9e4" stroke="#8c8a72" stroke-width="1.2"/><path d="M29 29q-7-7-14 0m176 49 5 1m-7 8 5 4" stroke="#a49689" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+<div class="tools"><button type="button" class="lang sound" id="sound" aria-pressed="true" aria-label="Turn sound off">♫ Sound on</button><button type="button" class="lang" id="lang" aria-pressed="false" aria-label="Show Vietnamese translations"><span class="switch"></span>Vietnamese</button></div></div>
+<nav class="tabs" aria-label="Practice tests" role="tablist" id="tests"></nav></header>
+<main class="shell"><div class="layout"><aside class="side" aria-label="Progress and questions"><div class="side-top"><div><div class="micro">Your progress</div><div class="score" id="score"></div></div><button class="text-btn mobile-toggle" id="toggleGrid" aria-expanded="false">Questions ↓</button></div><div class="meter" role="progressbar" aria-label="Checked questions" aria-valuemin="0" aria-valuemax="100" id="progress"><span id="meter"></span></div><p class="side-note" id="progressText"></p><div class="view-tabs"><button id="practiceTab" class="active">Practice</button><button id="wordsTab" class="notes-label">Word notes</button></div><div id="gridArea"><label class="sr-only" for="filter">Filter questions</label><select id="filter"><option value="all">All questions</option><option value="todo">Not checked</option><option value="wrong">Try again</option><option value="special">Needs review</option></select><div class="grid-wrap collapsed" id="gridWrap"><div class="grid" id="grid"></div><div class="legend"><span><i></i>Correct</span><span><i></i>Try again</span><span><i></i>Reviewed</span></div></div></div><button id="reset" class="text-btn">Reset this test</button></aside><section class="workspace" id="workspace" tabindex="-1" aria-label="Question area"></section></div><p class="saved-hint" id="storageHint">Progress saves automatically on this device.</p></main>
+<footer class="footer">Abhi-Uyen English Course</footer>
+<dialog id="resetDialog"><h2>Start this test again?</h2><p>This clears your answers, score and saved word notes for this test.</p><p class="vi" lang="vi">Xóa câu trả lời, điểm và các ghi chú đã lưu của đề này.</p><div class="actions"><button class="secondary" id="cancelReset">Keep progress</button><button class="primary" id="confirmReset">Reset test</button></div></dialog><div class="sr-only" id="live" aria-live="polite"></div>
+<script id="question-data" type="application/json">[
+  [
+    {
+      "n": 1,
+      "q": "My brother ___ his dog to the park every day.",
+      "a": [
+        "walks"
+      ],
+      "o": [
+        "is walking",
+        "walk",
+        "walks",
+        "walking"
+      ],
+      "en": "Every day shows a habit. With he or my brother, add -s: walks.",
+      "vi": "Every day chỉ thói quen. Với he hoặc my brother, thêm -s: walks.",
+      "c": "walk the dog",
+      "ce": "take a dog outside for a walk",
+      "cv": "dắt chó đi dạo",
+      "state": "ready"
+    },
+    {
+      "n": 2,
+      "q": "This is a tube of suncream. True or false?",
+      "a": [
+        "true"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "The picture shows suncream in a tube.",
+      "vi": "Hình cho thấy một tuýp kem chống nắng.",
+      "c": "a tube of suncream",
+      "ce": "suncream in a soft container",
+      "cv": "một tuýp kem chống nắng",
+      "state": "ready",
+      "img": "data:image/png;base64,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"
+    },
+    {
+      "n": 3,
+      "q": "Kate is tall. Anne is taller. Anne is t_____ _____ Kate.",
+      "a": [
+        "taller than"
+      ],
+      "o": [],
+      "en": "Use taller than to compare two people's height.",
+      "vi": "Dùng taller than để so sánh chiều cao của hai người.",
+      "c": "taller than",
+      "ce": "having more height than someone",
+      "cv": "cao hơn ai",
+      "state": "ready"
+    },
+    {
+      "n": 4,
+      "q": "My brother feels ___ again after his illness.",
+      "a": [
+        "strong"
+      ],
+      "o": [
+        "in strong",
+        "strongly",
+        "strength",
+        "strong"
+      ],
+      "en": "Use an adjective after feels. Strong is an adjective.",
+      "vi": "Sau feels, dùng tính từ. Strong là tính từ.",
+      "c": "feel strong",
+      "ce": "feel healthy and full of energy",
+      "cv": "cảm thấy khỏe mạnh",
+      "state": "ready"
+    },
+    {
+      "n": 5,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "uniform"
+      ],
+      "o": [
+        "<u>u<\/u>niform",
+        "w<u>o<\/u>nderful",
+        "st<u>u<\/u>dy",
+        "n<u>o<\/u>ne"
+      ],
+      "en": "Uniform starts with /juː/. The other marked vowels have /ʌ/.",
+      "vi": "Uniform bắt đầu bằng /juː/. Các nguyên âm được gạch chân còn lại có âm /ʌ/.",
+      "c": "school uniform",
+      "ce": "special clothes students wear at school",
+      "cv": "đồng phục học sinh",
+      "state": "ready"
+    },
+    {
+      "n": 6,
+      "q": "some/ the picture./ She needs/ colours/ for",
+      "a": [
+        "She needs some colours for the picture."
+      ],
+      "o": [],
+      "en": "Put the subject first: She + needs + some colours + for the picture.",
+      "vi": "Đặt chủ ngữ trước: She + needs + some colours + for the picture.",
+      "c": "need something for",
+      "ce": "want something to use for a purpose",
+      "cv": "cần thứ gì cho việc gì",
+      "state": "ready"
+    },
+    {
+      "n": 7,
+      "q": "Choose the word with different main stress.",
+      "a": [
+        "cartoon"
+      ],
+      "o": [
+        "city",
+        "cartoon",
+        "famous",
+        "cooker"
+      ],
+      "en": "Cartoon has stress on the second syllable: car-TOON. The others stress the first.",
+      "vi": "Cartoon nhấn âm hai: car-TOON. Các từ còn lại nhấn âm đầu.",
+      "c": "watch cartoons",
+      "ce": "watch animated stories",
+      "cv": "xem phim hoạt hình",
+      "state": "ready"
+    },
+    {
+      "n": 8,
+      "q": "Our family usually eat in a cheap res_____ near our house.",
+      "a": [
+        "restaurant"
+      ],
+      "o": [],
+      "en": "A restaurant is a place where you pay for a meal. Type the whole word.",
+      "vi": "Restaurant là nơi bạn trả tiền để ăn. Gõ cả từ.",
+      "c": "eat in a restaurant",
+      "ce": "have a meal at a restaurant",
+      "cv": "ăn ở nhà hàng",
+      "state": "ready"
+    },
+    {
+      "n": 9,
+      "q": "She likes pasta. Her favourite food _____.",
+      "a": [
+        "is pasta"
+      ],
+      "o": [],
+      "en": "Her favourite food is the subject. Add is + pasta.",
+      "vi": "Her favourite food là chủ ngữ. Thêm is + pasta.",
+      "c": "favourite food",
+      "ce": "the food you like most",
+      "cv": "món ăn yêu thích",
+      "state": "ready"
+    },
+    {
+      "n": 10,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "dancing"
+      ],
+      "o": [
+        "un<u>c<\/u>le",
+        "<u>c<\/u>ousin",
+        "<u>c<\/u>lock",
+        "dan<u>c<\/u>ing"
+      ],
+      "en": "The c in dancing is /s/. It is /k/ in uncle, cousin and clock.",
+      "vi": "Cần chọn dancing: c đọc /k/ trong uncle, cousin và clock, nhưng đọc /s/ trong dancing.",
+      "c": "go dancing",
+      "ce": "dance as an activity",
+      "cv": "đi nhảy",
+      "state": "ready"
+    },
+    {
+      "n": 12,
+      "q": "Where does she usually have lunch? — ___.",
+      "a": [
+        "In the canteen"
+      ],
+      "o": [
+        "At 6:30",
+        "In the canteen",
+        "2 days ago",
+        "At midnight"
+      ],
+      "en": "Where asks about a place. The canteen is a place.",
+      "vi": "Where hỏi địa điểm. Canteen là một địa điểm.",
+      "c": "have lunch",
+      "ce": "eat your midday meal",
+      "cv": "ăn trưa",
+      "state": "ready"
+    },
+    {
+      "n": 13,
+      "q": "Her best...mother is a member of the police force.",
+      "a": [
+        "friend's"
+      ],
+      "o": [
+        "friend's",
+        "friend",
+        "friend is",
+        "friends"
+      ],
+      "en": "Her best friend's mother means the mother of her best friend. Use 's.",
+      "vi": "Her best friend's mother là mẹ của bạn thân cô ấy. Dùng 's để chỉ sở hữu.",
+      "c": "a member of",
+      "ce": "a person who belongs to a group",
+      "cv": "một thành viên của",
+      "state": "ready"
+    },
+    {
+      "n": 14,
+      "q": "The cat ___ on the couch at present.",
+      "a": [
+        "is sleeping"
+      ],
+      "o": [
+        "sleeps",
+        "sleep",
+        "sleeping",
+        "is sleeping"
+      ],
+      "en": "At present means now. Use is + sleeping.",
+      "vi": "At present nghĩa là hiện tại. Dùng is + sleeping.",
+      "c": "sleep on the couch",
+      "ce": "sleep on a sofa",
+      "cv": "ngủ trên ghế sofa",
+      "state": "ready"
+    },
+    {
+      "n": 15,
+      "q": "People often say “___” before drinking.",
+      "a": [
+        "Cheers!"
+      ],
+      "o": [
+        "Cheese!",
+        "I'm drunk!",
+        "Ok!",
+        "Cheers!"
+      ],
+      "en": "People say Cheers! when they raise a drink together.",
+      "vi": "Mọi người nói Cheers! khi cùng nâng ly.",
+      "c": "say cheers",
+      "ce": "use a friendly word when raising a drink",
+      "cv": "nói lời chúc khi nâng ly",
+      "state": "ready"
+    },
+    {
+      "n": 16,
+      "q": "We mustn't ___ to turn off the lights before we leave.",
+      "a": [
+        "forget"
+      ],
+      "o": [
+        "forgetting",
+        "forgets",
+        "to forget",
+        "forget"
+      ],
+      "en": "After mustn't, use the base verb: forget.",
+      "vi": "Sau mustn't, dùng động từ nguyên mẫu: forget.",
+      "c": "turn off the lights",
+      "ce": "stop the lights working",
+      "cv": "tắt đèn",
+      "state": "ready"
+    },
+    {
+      "n": 17,
+      "q": "Choose the word with different main stress.",
+      "a": [
+        "appear"
+      ],
+      "o": [
+        "picture",
+        "appear",
+        "chopsticks",
+        "laptop"
+      ],
+      "en": "Appear has stress on the second syllable: ap-PEAR. The others stress the first.",
+      "vi": "Appear nhấn âm hai: ap-PEAR. Các từ còn lại nhấn âm đầu.",
+      "c": "use chopsticks",
+      "ce": "eat with two thin sticks",
+      "cv": "dùng đũa",
+      "state": "ready"
+    },
+    {
+      "n": 18,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "buy"
+      ],
+      "o": [
+        "<u>u<\/u>nder",
+        "f<u>u<\/u>nny",
+        "b<u>u<\/u>y",
+        "s<u>u<\/u>ch"
+      ],
+      "en": "Buy has /aɪ/. Under, funny and such have /ʌ/.",
+      "vi": "Buy có âm /aɪ/. Under, funny và such có âm /ʌ/.",
+      "c": "buy a present",
+      "ce": "pay for a gift",
+      "cv": "mua quà",
+      "state": "ready"
+    },
+    {
+      "n": 19,
+      "q": "Why don't we go to the zoo this Sunday morning?",
+      "a": [
+        "That's a good idea"
+      ],
+      "o": [
+        "You are well",
+        "Thanks a lot",
+        "Because I don't like animals",
+        "That's a good idea"
+      ],
+      "en": "Why don't we…? makes a suggestion. That's a good idea accepts it.",
+      "vi": "Why don't we…? đưa ra gợi ý. That's a good idea thể hiện sự đồng ý.",
+      "c": "go to the zoo",
+      "ce": "visit a place with animals",
+      "cv": "đi sở thú",
+      "state": "ready"
+    },
+    {
+      "n": 20,
+      "q": "A_____ is the eighth month of the year.",
+      "a": [
+        "August"
+      ],
+      "o": [],
+      "en": "August is month number eight. Type the whole word.",
+      "vi": "August là tháng thứ tám. Gõ cả từ.",
+      "c": "the eighth month",
+      "ce": "month number eight",
+      "cv": "tháng thứ tám",
+      "state": "ready"
+    },
+    {
+      "n": 21,
+      "q": "There are 120 seconds in 2 ___.",
+      "a": [
+        "minutes"
+      ],
+      "o": [
+        "years",
+        "hours",
+        "minutes",
+        "weeks"
+      ],
+      "en": "One minute has 60 seconds. Two minutes have 120 seconds.",
+      "vi": "Một phút có 60 giây. Hai phút có 120 giây.",
+      "c": "two minutes",
+      "ce": "120 seconds",
+      "cv": "hai phút",
+      "state": "ready"
+    },
+    {
+      "n": 22,
+      "q": "8 p.m./ on Wednesday./ The Animals/ programme/ is at",
+      "a": [
+        "The Animals programme is at 8 p.m. on Wednesday."
+      ],
+      "o": [],
+      "en": "Use at before a clock time and on before a day.",
+      "vi": "Dùng at trước giờ và on trước thứ.",
+      "c": "at 8 p.m.",
+      "ce": "at eight in the evening",
+      "cv": "lúc 8 giờ tối",
+      "state": "ready"
+    },
+    {
+      "n": 24,
+      "q": "Choose the word with different main stress.",
+      "a": [
+        "improve"
+      ],
+      "o": [
+        "improve",
+        "homework",
+        "often",
+        "summer"
+      ],
+      "en": "Improve stresses the second syllable: im-PROVE. The others stress the first.",
+      "vi": "Improve nhấn âm hai: im-PROVE. Các từ còn lại nhấn âm đầu.",
+      "c": "do homework",
+      "ce": "complete school work at home",
+      "cv": "làm bài tập về nhà",
+      "state": "ready"
+    },
+    {
+      "n": 25,
+      "q": "Going ___ bike is faster than going on foot.",
+      "a": [
+        "by"
+      ],
+      "o": [],
+      "en": "Use by bike for the way you travel.",
+      "vi": "Dùng by bike để nói cách di chuyển.",
+      "c": "by bike / on foot",
+      "ce": "riding a bicycle / walking",
+      "cv": "bằng xe đạp / đi bộ",
+      "state": "ready"
+    },
+    {
+      "n": 26,
+      "q": "How much is this book? How much does this _____? ",
+      "a": [
+        "book cost"
+      ],
+      "o": [],
+      "en": "How much does + subject + cost? asks the price.",
+      "vi": "How much does + chủ ngữ + cost? dùng để hỏi giá.",
+      "c": "How much does it cost?",
+      "ce": "What is the price?",
+      "cv": "Nó có giá bao nhiêu?",
+      "state": "ready"
+    },
+    {
+      "n": 27,
+      "q": "Find the odd one out.",
+      "a": [
+        "dolphin"
+      ],
+      "o": [
+        "elephant",
+        "monkey",
+        "dolphin",
+        "tiger"
+      ],
+      "en": "A dolphin lives in water. The other animals mainly live on land.",
+      "vi": "Cá heo sống dưới nước. Các con vật còn lại chủ yếu sống trên cạn.",
+      "c": "live in water",
+      "ce": "have a home in water",
+      "cv": "sống dưới nước",
+      "state": "ready"
+    },
+    {
+      "n": 28,
+      "q": "What is the name of a place?",
+      "a": [
+        "Factory"
+      ],
+      "o": [
+        "Avocado",
+        "Teacher",
+        "Factory",
+        "Banana"
+      ],
+      "en": "A factory is a place where people make things.",
+      "vi": "Factory là nơi người ta sản xuất đồ vật.",
+      "c": "work in a factory",
+      "ce": "have a job in a place that makes things",
+      "cv": "làm việc trong nhà máy",
+      "state": "ready"
+    },
+    {
+      "n": 29,
+      "q": "Choose the correct comparison: My room / my sister's room. (big)",
+      "a": [
+        "My room is bigger than my sister's room.",
+        "My room is bigger than my sister's."
+      ],
+      "o": [
+        "My room is than the bigger my sister's room.",
+        "My room is bigger than my sister's room.",
+        "My room as bigger as my sister's room.",
+        "My room is bigger than my sister's."
+      ],
+      "en": "Big becomes bigger. Use than to compare two rooms. The last option also works if room is understood, so both are accepted.",
+      "vi": "Big đổi thành bigger. Dùng than để so sánh hai phòng. Phương án cuối cũng đúng khi hiểu ngầm room, nên chấp nhận cả hai.",
+      "c": "bigger than",
+      "ce": "larger than something else",
+      "cv": "lớn hơn",
+      "state": "ready"
+    },
+    {
+      "n": 30,
+      "q": "She ___ to the museum every month.",
+      "a": [
+        "goes"
+      ],
+      "o": [
+        "going",
+        "go",
+        "goes",
+        "is going"
+      ],
+      "en": "Every month shows a habit. With she, use goes.",
+      "vi": "Every month chỉ thói quen. Với she, dùng goes.",
+      "c": "go to the museum",
+      "ce": "visit a museum",
+      "cv": "đi bảo tàng",
+      "state": "ready"
+    },
+    {
+      "n": 31,
+      "q": "LOST: My cat, named Whiskers, has been lost since yesterday morning. She is white and has one blue eye and one green eye. If you see her near the large tree on King Street, please call me. We miss Whiskers very much and want her back safely.\\nWhat is special about the lost cat's eyes?",
+      "a": [
+        "One is blue and one is green."
+      ],
+      "o": [
+        "They are always closed.",
+        "They are both blue.",
+        "They are both black.",
+        "One is blue and one is green."
+      ],
+      "en": "The notice says one blue eye and one green eye.",
+      "vi": "Thông báo nói một mắt màu xanh dương và một mắt màu xanh lá.",
+      "c": "get back safely",
+      "ce": "return without being hurt",
+      "cv": "trở về an toàn",
+      "state": "ready"
+    },
+    {
+      "n": 32,
+      "q": "___ many interesting places to visit in Viet Nam.",
+      "a": [
+        "There are"
+      ],
+      "o": [
+        "There does",
+        "There is",
+        "There do",
+        "There are"
+      ],
+      "en": "Places is plural. Use There are.",
+      "vi": "Places là danh từ số nhiều. Dùng There are.",
+      "c": "places to visit",
+      "ce": "places you can go to see",
+      "cv": "những nơi để tham quan",
+      "state": "ready"
+    },
+    {
+      "n": 33,
+      "q": "It's bor___ to talk with him. He never says anything interesting.",
+      "a": [
+        "boring"
+      ],
+      "o": [],
+      "en": "Use boring for something or someone that makes you feel bored. Type the whole word.",
+      "vi": "Boring mô tả điều hoặc người khiến bạn chán. Gõ cả từ.",
+      "c": "talk with someone",
+      "ce": "have a conversation with someone",
+      "cv": "nói chuyện với ai",
+      "state": "ready"
+    },
+    {
+      "n": 34,
+      "q": "Choose the word with different main stress.",
+      "a": [
+        "reduce"
+      ],
+      "o": [
+        "reduce",
+        "market",
+        "blossom",
+        "travel"
+      ],
+      "en": "Reduce stresses the second syllable: re-DUCE. The others stress the first.",
+      "vi": "Reduce nhấn âm hai: re-DUCE. Các từ còn lại nhấn âm đầu.",
+      "c": "reduce waste",
+      "ce": "make less rubbish",
+      "cv": "giảm rác thải",
+      "state": "ready"
+    },
+    {
+      "n": 35,
+      "q": "Nam usually (play) ___ sports, but at the moment he (fly) ___ his kites.",
+      "a": [
+        "plays - is flying"
+      ],
+      "o": [
+        "played - flied",
+        "is playing - is flying",
+        "plays - is flying",
+        "is playing - flies"
+      ],
+      "en": "Usually needs the present simple. At the moment needs is + verb-ing.",
+      "vi": "Usually dùng hiện tại đơn. At the moment dùng is + động từ-ing.",
+      "c": "play sports / fly kites",
+      "ce": "do sports / make kites fly",
+      "cv": "chơi thể thao / thả diều",
+      "state": "ready"
+    },
+    {
+      "n": 36,
+      "q": "In Viet Nam, people drive on the ___ of the street.",
+      "a": [
+        "right",
+        "right side"
+      ],
+      "o": [],
+      "en": "In Viet Nam, traffic keeps to the right.",
+      "vi": "Ở Việt Nam, các phương tiện đi về bên phải.",
+      "c": "on the right",
+      "ce": "on the right-hand side",
+      "cv": "ở bên phải",
+      "state": "ready"
+    },
+    {
+      "n": 37,
+      "q": "___ many outdoor activities in the park near my house.",
+      "a": [
+        "There are"
+      ],
+      "o": [
+        "There does",
+        "There is",
+        "There are",
+        "There do"
+      ],
+      "en": "Activities is plural, so use There are.",
+      "vi": "Activities là số nhiều, nên dùng There are.",
+      "c": "outdoor activities",
+      "ce": "things you do outside",
+      "cv": "hoạt động ngoài trời",
+      "state": "ready"
+    },
+    {
+      "n": 38,
+      "q": "You're ___ third person to ask me that.",
+      "a": [
+        "the"
+      ],
+      "o": [
+        "no article",
+        "an",
+        "the",
+        "a"
+      ],
+      "en": "Use the before an ordinal number: the third.",
+      "vi": "Dùng the trước số thứ tự: the third.",
+      "c": "the third person",
+      "ce": "person number three",
+      "cv": "người thứ ba",
+      "state": "ready"
+    },
+    {
+      "n": 40,
+      "q": "What is the name of a place?",
+      "a": [
+        "Airport"
+      ],
+      "o": [
+        "Banana",
+        "Frog",
+        "Motorbike",
+        "Airport"
+      ],
+      "en": "An airport is a place where planes arrive and leave.",
+      "vi": "Airport là nơi máy bay đến và đi.",
+      "c": "at the airport",
+      "ce": "at a place where planes arrive and leave",
+      "cv": "ở sân bay",
+      "state": "ready"
+    },
+    {
+      "n": 41,
+      "q": "Let's go out for lunch. There ___ any rice in the kitchen.",
+      "a": [
+        "isn't"
+      ],
+      "o": [
+        "is",
+        "is no",
+        "isn't",
+        "not"
+      ],
+      "en": "Rice is uncountable. Use There isn't any rice.",
+      "vi": "Rice không đếm được. Dùng There isn't any rice.",
+      "c": "go out for lunch",
+      "ce": "eat lunch away from home",
+      "cv": "ra ngoài ăn trưa",
+      "state": "ready"
+    },
+    {
+      "n": 42,
+      "q": "The girl is taller than the boy. True or false?",
+      "a": [
+        "false"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "In the picture, the boy is taller than the girl.",
+      "vi": "Trong hình, bạn nam cao hơn bạn nữ.",
+      "c": "taller than",
+      "ce": "having more height than someone",
+      "cv": "cao hơn ai",
+      "state": "ready",
+      "img": "data:image/png;base64,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"
+    },
+    {
+      "n": 43,
+      "q": "to seven and/ Classes start/ past eleven./ at a quarter/ finish at a quarter",
+      "a": [
+        "Classes start at a quarter to seven and finish at a quarter past eleven."
+      ],
+      "o": [],
+      "en": "A quarter to seven is 6:45. A quarter past eleven is 11:15.",
+      "vi": "A quarter to seven là 6:45. A quarter past eleven là 11:15.",
+      "c": "a quarter to / a quarter past",
+      "ce": "15 minutes before / after an hour",
+      "cv": "kém 15 phút / hơn 15 phút",
+      "state": "ready"
+    },
+    {
+      "n": 45,
+      "q": "The students/ noise./ shouldn't/ too much/ make",
+      "a": [
+        "The students shouldn't make too much noise."
+      ],
+      "o": [],
+      "en": "After shouldn't, use make. Too much goes with uncountable noise.",
+      "vi": "Sau shouldn't, dùng make. Too much đi với noise không đếm được.",
+      "c": "make noise",
+      "ce": "produce a loud sound",
+      "cv": "gây tiếng ồn",
+      "state": "ready"
+    },
+    {
+      "n": 46,
+      "q": "What time does the football match start today? — ___.",
+      "a": [
+        "At six thirty"
+      ],
+      "o": [
+        "From Monday to Wednesday",
+        "At six thirty",
+        "Up to 1,000 USD",
+        "Yesterday"
+      ],
+      "en": "What time asks for a clock time. Six thirty is 6:30.",
+      "vi": "What time hỏi giờ. Six thirty là 6:30.",
+      "c": "a football match",
+      "ce": "a game of football",
+      "cv": "một trận bóng đá",
+      "state": "ready"
+    },
+    {
+      "n": 47,
+      "q": "Does he want ___ his grandfather?",
+      "a": [
+        "to visit"
+      ],
+      "o": [
+        "visits",
+        "visit",
+        "visiting",
+        "to visit"
+      ],
+      "en": "Use want + to + base verb.",
+      "vi": "Dùng want + to + động từ nguyên mẫu.",
+      "c": "want to visit",
+      "ce": "would like to go and see someone",
+      "cv": "muốn đến thăm",
+      "state": "ready"
+    },
+    {
+      "n": 48,
+      "q": "The Sahara Desert is the hottest d___ in the world.",
+      "a": [
+        "desert"
+      ],
+      "o": [],
+      "en": "A desert is a very dry place. Type the whole word. This is the expected word, not a check of the geographical claim.",
+      "vi": "Desert là sa mạc, một nơi rất khô. Gõ cả từ. Bài này kiểm tra từ cần điền, không xác minh nhận định địa lý.",
+      "c": "in the world",
+      "ce": "anywhere on Earth",
+      "cv": "trên thế giới",
+      "state": "ready"
+    },
+    {
+      "n": 49,
+      "q": "Argentina defeated ___ to become the champion of the 2022 World Cup.",
+      "a": [
+        "France"
+      ],
+      "o": [
+        "Portugal",
+        "England",
+        "Morocco",
+        "France"
+      ],
+      "en": "Argentina beat France in the final of the 2022 World Cup.",
+      "vi": "Argentina thắng Pháp trong trận chung kết World Cup 2022.",
+      "c": "become the champion",
+      "ce": "win first place in a competition",
+      "cv": "trở thành nhà vô địch",
+      "state": "ready"
+    },
+    {
+      "n": 50,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "family"
+      ],
+      "o": [
+        "f<u>a<\/u>mous",
+        "c<u>a<\/u>ke",
+        "f<u>a<\/u>mily",
+        "am<u>a<\/u>zing"
+      ],
+      "en": "Family has /æ/. The other marked vowels have /eɪ/.",
+      "vi": "Family có âm /æ/. Các nguyên âm được gạch chân còn lại có âm /eɪ/.",
+      "c": "a famous place",
+      "ce": "a place many people know",
+      "cv": "một nơi nổi tiếng",
+      "state": "ready"
+    },
+    {
+      "n": 51,
+      "q": "Coral reefs are colorful underwater cities where many fish live. They are made by tiny animals called corals. These reefs help protect the coast from big waves. We must keep the ocean clean so these important natural structures can stay healthy and safe.\\nWhat are coral reefs compared to in the text?",
+      "a": [
+        "colorful underwater cities"
+      ],
+      "o": [
+        "large, safe boats",
+        "tiny little animals",
+        "colorful underwater cities",
+        "tall, white mountains"
+      ],
+      "en": "The first sentence calls coral reefs colorful underwater cities.",
+      "vi": "Câu đầu ví rạn san hô như những thành phố đầy màu sắc dưới nước.",
+      "c": "protect the coast",
+      "ce": "keep the land beside the sea safe",
+      "cv": "bảo vệ bờ biển",
+      "state": "ready"
+    },
+    {
+      "n": 52,
+      "q": "Look! That boy ___ trash on the street.",
+      "a": [
+        "is leaving"
+      ],
+      "o": [
+        "leaves",
+        "leave",
+        "is going to leave",
+        "is leaving"
+      ],
+      "en": "Look! points to an action now. Use is leaving.",
+      "vi": "Look! hướng đến hành động đang diễn ra. Dùng is leaving.",
+      "c": "leave trash",
+      "ce": "leave rubbish behind",
+      "cv": "để rác lại",
+      "state": "ready"
+    },
+    {
+      "n": 53,
+      "q": "Find the odd one out.",
+      "a": [
+        "Ha Noi"
+      ],
+      "o": [
+        "Malaysia",
+        "China",
+        "Ha Noi",
+        "England"
+      ],
+      "en": "Ha Noi is a city. The other names refer to countries.",
+      "vi": "Hà Nội là thành phố. Các tên còn lại chỉ các nước.",
+      "c": "a capital city",
+      "ce": "the main city of a country",
+      "cv": "thành phố thủ đô",
+      "state": "ready"
+    },
+    {
+      "n": 54,
+      "q": "___ — He washes his car with his son.",
+      "a": [
+        "Who does he wash his car with?"
+      ],
+      "o": [
+        "What is he doing with his son?",
+        "Who does he wash his car with?",
+        "How often does he wash his car?",
+        "Why does he wash his car?"
+      ],
+      "en": "With his son tells us who is with him. Ask Who…with?",
+      "vi": "With his son cho biết ai làm cùng. Hỏi Who…with?",
+      "c": "wash a car",
+      "ce": "clean a car with water",
+      "cv": "rửa xe",
+      "state": "ready"
+    },
+    {
+      "n": 56,
+      "q": "My father decorates the house with red banners. He says red brings good luck. We also hang small lanterns near the door. They make the house bright and beautiful.\\nSmall lanterns make the house bright and beautiful. True or false?",
+      "a": [
+        "true"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "They refers to the small lanterns. The last sentence gives the answer.",
+      "vi": "They thay cho những chiếc đèn lồng nhỏ. Câu cuối cho biết đáp án.",
+      "c": "bring good luck",
+      "ce": "make good things more likely to happen",
+      "cv": "mang lại may mắn",
+      "state": "ready"
+    },
+    {
+      "n": 57,
+      "q": "Which is the name of a country?",
+      "a": [
+        "Denmark"
+      ],
+      "o": [
+        "Indian",
+        "Italian",
+        "Chinese",
+        "Denmark"
+      ],
+      "en": "Denmark is a country. Indian, Italian and Chinese describe nationalities or languages.",
+      "vi": "Denmark là một quốc gia. Indian, Italian và Chinese chỉ quốc tịch hoặc ngôn ngữ.",
+      "c": "come from Denmark",
+      "ce": "be from Denmark",
+      "cv": "đến từ Đan Mạch",
+      "state": "ready"
+    },
+    {
+      "n": 58,
+      "q": "is a/ programme./ sports/ \"Sport 24\"",
+      "a": [
+        "\"Sport 24\" is a sports programme."
+      ],
+      "o": [],
+      "en": "Put the name first, then is a + type of programme.",
+      "vi": "Đặt tên trước, sau đó is a + loại chương trình.",
+      "c": "a sports programme",
+      "ce": "a TV show about sports",
+      "cv": "chương trình thể thao",
+      "state": "ready"
+    },
+    {
+      "n": 59,
+      "q": "are there/ How many/ rooms/ house?/ in Minh's",
+      "a": [
+        "How many rooms are there in Minh's house?"
+      ],
+      "o": [],
+      "en": "Use How many + plural noun + are there…?",
+      "vi": "Dùng How many + danh từ số nhiều + are there…?",
+      "c": "How many rooms…?",
+      "ce": "ask the number of rooms",
+      "cv": "hỏi số lượng phòng",
+      "state": "ready"
+    },
+    {
+      "n": 60,
+      "q": "You can join the club when you ___ older.",
+      "a": [
+        "get"
+      ],
+      "o": [
+        "are getting",
+        "get",
+        "will get",
+        "can get"
+      ],
+      "en": "Use the present simple after when to talk about a future time.",
+      "vi": "Dùng hiện tại đơn sau when để nói thời điểm trong tương lai.",
+      "c": "join a club",
+      "ce": "become a member of a club",
+      "cv": "tham gia câu lạc bộ",
+      "state": "ready"
+    },
+    {
+      "n": 61,
+      "q": "They often ___ their grandparents at Tet holiday.",
+      "a": [
+        "visit"
+      ],
+      "o": [
+        "visited",
+        "visit",
+        "visits",
+        "has been visited"
+      ],
+      "en": "Often shows a habit. They takes visit without -s.",
+      "vi": "Often chỉ thói quen. They đi với visit không thêm -s.",
+      "c": "visit grandparents",
+      "ce": "go and see your grandparents",
+      "cv": "thăm ông bà",
+      "state": "ready"
+    },
+    {
+      "n": 62,
+      "q": "Dear Mr. Lee, I am writing this email because I have a problem with the English homework about adjectives. I could not understand Question 5. Could you please explain it again tomorrow during the study hour? Thank you very much for your help.\\nWhat subject is Anna having a problem with?",
+      "a": [
+        "English"
+      ],
+      "o": [
+        "Science",
+        "History",
+        "Maths",
+        "English"
+      ],
+      "en": "The email says she has a problem with the English homework.",
+      "vi": "Email nói bạn ấy gặp khó khăn với bài tập tiếng Anh.",
+      "c": "have a problem with",
+      "ce": "find something difficult",
+      "cv": "gặp khó khăn với",
+      "state": "ready"
+    },
+    {
+      "n": 64,
+      "q": "have/ any time/ for/ Do you/ free/ coffee?",
+      "a": [
+        "Do you have any free time for coffee?"
+      ],
+      "o": [],
+      "en": "Free describes time, so keep free time together.",
+      "vi": "Free bổ nghĩa cho time, nên đặt free time cạnh nhau.",
+      "c": "have free time",
+      "ce": "have time when you are not busy",
+      "cv": "có thời gian rảnh",
+      "state": "ready",
+      "chunks": [
+        "have",
+        "any",
+        "for",
+        "Do you",
+        "free time",
+        "coffee?"
+      ]
+    },
+    {
+      "n": 67,
+      "q": "Basketball is a popular after-school ac___ in the U.S.",
+      "a": [
+        "activity"
+      ],
+      "o": [],
+      "en": "Activity is something you do. Type the whole word.",
+      "vi": "Activity là một hoạt động. Gõ cả từ.",
+      "c": "an after-school activity",
+      "ce": "something you do after school",
+      "cv": "hoạt động sau giờ học",
+      "state": "ready"
+    },
+    {
+      "n": 70,
+      "q": "I live ___ my grandparents ___ the countryside.",
+      "a": [
+        "with; in",
+        "with in"
+      ],
+      "o": [],
+      "en": "Use with for people you live with and in for the countryside.",
+      "vi": "Dùng with cho người sống cùng và in cho vùng nông thôn.",
+      "c": "in the countryside",
+      "ce": "in an area away from towns",
+      "cv": "ở vùng nông thôn",
+      "state": "ready"
+    }
+  ],
+  [
+    {
+      "n": 1,
+      "q": "A: Do you help your parents before Tet?\\nB: Yes, I clean the house and decorate it.\\nA: Do you like doing that?\\nB: Yes, because it makes the house beautiful.\\nDecorating makes the house beautiful. True or false?",
+      "a": [
+        "true"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "B says decorating makes the house beautiful.",
+      "vi": "B nói việc trang trí làm ngôi nhà đẹp hơn.",
+      "c": "decorate the house",
+      "ce": "make a house look nice for an event",
+      "cv": "trang trí nhà cửa",
+      "state": "ready"
+    },
+    {
+      "n": 2,
+      "q": "The blue bicycle over there is ___.",
+      "a": [
+        "Phong's"
+      ],
+      "o": [
+        "Phong'",
+        "Phongs's",
+        "Phong's",
+        "Phong"
+      ],
+      "en": "Use 's after the person's name to show who owns the bicycle.",
+      "vi": "Thêm 's sau tên để chỉ ai sở hữu xe đạp.",
+      "c": "belong to someone",
+      "ce": "be owned by someone",
+      "cv": "thuộc về ai",
+      "state": "ready"
+    },
+    {
+      "n": 3,
+      "q": "My father goes ___ at the river near our house because it's salmon season.",
+      "a": [
+        "fishing"
+      ],
+      "o": [
+        "skiing",
+        "shopping",
+        "fishing",
+        "running"
+      ],
+      "en": "People go fishing in a river. Salmon is a kind of fish.",
+      "vi": "Người ta đi câu ở sông. Salmon là một loại cá.",
+      "c": "go fishing",
+      "ce": "try to catch fish",
+      "cv": "đi câu cá",
+      "state": "ready"
+    },
+    {
+      "n": 5,
+      "q": "___ the 13th is considered an unlucky day in Western culture.",
+      "a": [
+        "Friday"
+      ],
+      "o": [
+        "Friday",
+        "Saturday",
+        "Tuesday",
+        "Monday"
+      ],
+      "en": "Friday the 13th is traditionally considered unlucky in some Western cultures.",
+      "vi": "Thứ Sáu ngày 13 thường được xem là không may trong một số nền văn hóa phương Tây.",
+      "c": "an unlucky day",
+      "ce": "a day people connect with bad luck",
+      "cv": "một ngày không may mắn",
+      "state": "ready"
+    },
+    {
+      "n": 7,
+      "q": "food. / enough / will / Everybody / have",
+      "a": [
+        "Everybody will have enough food."
+      ],
+      "o": [],
+      "en": "Put Everybody first, then will have + enough food.",
+      "vi": "Đặt Everybody trước, sau đó will have + enough food.",
+      "c": "enough food",
+      "ce": "as much food as people need",
+      "cv": "đủ thức ăn",
+      "state": "ready"
+    },
+    {
+      "n": 8,
+      "q": "She is talking ___ a foreigner.",
+      "a": [
+        "to",
+        "with"
+      ],
+      "o": [],
+      "en": "Talk to and talk with are both possible before a person.",
+      "vi": "Có thể dùng cả talk to và talk with trước một người.",
+      "c": "talk to someone",
+      "ce": "speak with someone",
+      "cv": "nói chuyện với ai",
+      "state": "ready"
+    },
+    {
+      "n": 9,
+      "q": "The sloth ___ a lot during the day.",
+      "a": [
+        "sleeps"
+      ],
+      "o": [
+        "sleeps",
+        "is sleeping",
+        "sleep",
+        "sleeping"
+      ],
+      "en": "This is a general habit. The sloth is singular, so use sleeps.",
+      "vi": "Đây là thói quen chung. The sloth là số ít, nên dùng sleeps.",
+      "c": "during the day",
+      "ce": "in the daytime",
+      "cv": "vào ban ngày",
+      "state": "ready"
+    },
+    {
+      "n": 10,
+      "q": "CINEMA: Please turn off your phone before the film starts. No outside food or drink permitted.\\nOutside food is allowed inside the cinema. True or false?",
+      "a": [
+        "false"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "No outside food or drink permitted means you cannot bring them in.",
+      "vi": "No outside food or drink permitted nghĩa là không được mang đồ ăn, thức uống bên ngoài vào.",
+      "c": "turn off your phone",
+      "ce": "stop your phone working",
+      "cv": "tắt điện thoại",
+      "state": "ready"
+    },
+    {
+      "n": 11,
+      "q": "Which cou___ is bigger, China or Viet Nam?",
+      "a": [
+        "country"
+      ],
+      "o": [],
+      "en": "China and Viet Nam are countries. Type the whole word.",
+      "vi": "Trung Quốc và Việt Nam là các quốc gia. Gõ cả từ.",
+      "c": "Which country…?",
+      "ce": "ask about one country from a choice",
+      "cv": "hỏi quốc gia nào",
+      "state": "ready"
+    },
+    {
+      "n": 12,
+      "q": "My brother likes ___ Animal Planet channel on TV.",
+      "a": [
+        "watching"
+      ],
+      "o": [
+        "watches",
+        "watched",
+        "watch",
+        "watching"
+      ],
+      "en": "Like can take verb-ing. Choose watching.",
+      "vi": "Like có thể đi với động từ-ing. Chọn watching.",
+      "c": "watch TV",
+      "ce": "look at programmes on television",
+      "cv": "xem tivi",
+      "state": "ready"
+    },
+    {
+      "n": 13,
+      "q": "My ___ arms are very strong. He can lift heavy things easily.",
+      "a": [
+        "brother's"
+      ],
+      "o": [
+        "brother'",
+        "brother",
+        "brothers",
+        "brother's"
+      ],
+      "en": "The arms belong to one brother. Use brother's.",
+      "vi": "Đôi tay thuộc về một người anh hoặc em trai. Dùng brother's.",
+      "c": "lift heavy things",
+      "ce": "pick up things that weigh a lot",
+      "cv": "nâng vật nặng",
+      "state": "ready"
+    },
+    {
+      "n": 14,
+      "q": "Choose the word with different main stress.",
+      "a": [
+        "joyful"
+      ],
+      "o": [
+        "compare",
+        "agree",
+        "select",
+        "joyful"
+      ],
+      "en": "Joyful stresses the first syllable. Compare, agree and select stress the second.",
+      "vi": "Joyful nhấn âm đầu. Compare, agree và select nhấn âm hai.",
+      "c": "feel joyful",
+      "ce": "feel very happy",
+      "cv": "cảm thấy vui sướng",
+      "state": "ready"
+    },
+    {
+      "n": 15,
+      "q": "Choose the word with different main stress.",
+      "a": [
+        "tonight"
+      ],
+      "o": [
+        "talent",
+        "funny",
+        "compass",
+        "tonight"
+      ],
+      "en": "Tonight stresses the second syllable: to-NIGHT. The others stress the first.",
+      "vi": "Tonight nhấn âm hai: to-NIGHT. Các từ còn lại nhấn âm đầu.",
+      "c": "use a compass",
+      "ce": "use a tool to find directions",
+      "cv": "dùng la bàn",
+      "state": "ready"
+    },
+    {
+      "n": 16,
+      "q": "Television provides us ___ a variety of programs.",
+      "a": [
+        "with"
+      ],
+      "o": [],
+      "en": "Use provide someone with something.",
+      "vi": "Dùng provide someone with something: cung cấp cho ai thứ gì.",
+      "c": "a variety of",
+      "ce": "many different kinds of",
+      "cv": "nhiều loại khác nhau",
+      "state": "ready"
+    },
+    {
+      "n": 17,
+      "q": "to / my parents. / book exhibition / I'm going / with",
+      "a": [
+        "I'm going to a book exhibition with my parents."
+      ],
+      "o": [],
+      "en": "A natural sentence needs a before book exhibition. The given chunks leave out a; the model answer supplies it.",
+      "vi": "Câu tự nhiên cần a trước book exhibition. Các cụm đã cho thiếu a; câu mẫu bổ sung từ này.",
+      "c": "a book exhibition",
+      "ce": "an event where books are shown",
+      "cv": "triển lãm sách",
+      "state": "ready",
+      "chunks": [
+        "to",
+        "my parents.",
+        "a book exhibition",
+        "I'm going",
+        "with"
+      ],
+      "hint": "A missing article is supplied in the chunks."
+    },
+    {
+      "n": 18,
+      "q": "She ___ bread and milk for breakfast every morning.",
+      "a": [
+        "has",
+        "consumes"
+      ],
+      "o": [],
+      "en": "Has means eats or drinks here. She takes has. Consumes also fits, but has is the simple, natural choice.",
+      "vi": "Has ở đây chỉ ăn hoặc uống. She đi với has. Consumes cũng phù hợp, nhưng has đơn giản và tự nhiên hơn.",
+      "c": "have breakfast",
+      "ce": "eat the first meal of the day",
+      "cv": "ăn sáng",
+      "state": "ready"
+    },
+    {
+      "n": 19,
+      "q": "Tom and / Jerry are / two famous / characters. / cartoon",
+      "a": [
+        "Tom and Jerry are two famous cartoon characters."
+      ],
+      "o": [],
+      "en": "Cartoon describes characters. Put cartoon before characters.",
+      "vi": "Cartoon bổ nghĩa cho characters. Đặt cartoon trước characters.",
+      "c": "cartoon characters",
+      "ce": "people or animals in animated stories",
+      "cv": "nhân vật hoạt hình",
+      "state": "ready"
+    },
+    {
+      "n": 20,
+      "q": "What's the colour ___ the cloud? — It's white.",
+      "a": [
+        "of"
+      ],
+      "o": [],
+      "en": "Use the colour of something.",
+      "vi": "Dùng the colour of something: màu của thứ gì.",
+      "c": "the colour of",
+      "ce": "the colour that something has",
+      "cv": "màu của",
+      "state": "ready"
+    },
+    {
+      "n": 22,
+      "q": "Nam ___ his teeth twice a day.",
+      "a": [
+        "brushes"
+      ],
+      "o": [
+        "brushes",
+        "brush",
+        "is brushing",
+        "brushing"
+      ],
+      "en": "Twice a day shows a habit. With Nam, add -es to brush.",
+      "vi": "Twice a day chỉ thói quen. Với Nam, thêm -es vào brush.",
+      "c": "brush your teeth",
+      "ce": "clean your teeth with a toothbrush",
+      "cv": "đánh răng",
+      "state": "ready"
+    },
+    {
+      "n": 23,
+      "q": "we have / together? / When / lunch / will",
+      "a": [
+        "When will we have lunch together?"
+      ],
+      "o": [],
+      "en": "Use When + will + subject + base verb.",
+      "vi": "Dùng When + will + chủ ngữ + động từ nguyên mẫu.",
+      "c": "have lunch together",
+      "ce": "eat a midday meal with other people",
+      "cv": "ăn trưa cùng nhau",
+      "state": "ready"
+    },
+    {
+      "n": 24,
+      "q": "Find the odd one out.",
+      "a": [
+        "danger"
+      ],
+      "o": [
+        "danger",
+        "tired",
+        "hungry",
+        "thirsty"
+      ],
+      "en": "Danger is a noun. Tired, hungry and thirsty are adjectives for how you feel.",
+      "vi": "Danger là danh từ. Tired, hungry và thirsty là tính từ chỉ cảm giác.",
+      "c": "feel thirsty",
+      "ce": "want a drink",
+      "cv": "cảm thấy khát",
+      "state": "ready"
+    },
+    {
+      "n": 25,
+      "q": "Where is Phu Quoc Island?",
+      "a": [
+        "In An Giang Province."
+      ],
+      "o": [
+        "In An Giang Province.",
+        "In Khanh Hoa Province.",
+        "In Dong Thap Province.",
+        "In Ca Mau Province."
+      ],
+      "en": "Phu Quoc is in An Giang Province following the 2025 administrative changes.",
+      "vi": "Phú Quốc thuộc tỉnh An Giang sau thay đổi đơn vị hành chính năm 2025.",
+      "c": "Phu Quoc Island",
+      "ce": "the name of an island",
+      "cv": "đảo Phú Quốc",
+      "state": "ready"
+    },
+    {
+      "n": 26,
+      "q": "Choose the part that needs correcting: The <u>man<\/u> is <u>driving a car<\/u> <u>very<\/u> <u>fastly<\/u>.",
+      "a": [
+        "fastly"
+      ],
+      "o": [
+        "man",
+        "driving a car",
+        "very",
+        "fastly"
+      ],
+      "en": "Change fastly to fast. Fast is both an adjective and an adverb. Say: The man is driving a car very fast.",
+      "vi": "Đổi fastly thành fast. Fast vừa là tính từ vừa là trạng từ. Câu đúng: The man is driving a car very fast.",
+      "c": "drive a car",
+      "ce": "control a car on the road",
+      "cv": "lái ô tô",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 28,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "project"
+      ],
+      "o": [
+        "fin<u>g<\/u>er",
+        "le<u>g<\/u>",
+        "pro<u>j<\/u>ect",
+        "bi<u>g<\/u>"
+      ],
+      "en": "The j in project is /dʒ/. The marked g in finger, leg and big is /ɡ/.",
+      "vi": "J trong project đọc /dʒ/. G được gạch chân trong finger, leg và big đọc /ɡ/.",
+      "c": "do a project",
+      "ce": "work on a planned piece of work",
+      "cv": "làm một dự án",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 29,
+      "q": "On Tet, children wear new clothes. They visit grandparents and relatives. They say good wishes. Children often get lucky money.\\nWhich activity is NOT mentioned?",
+      "a": [
+        "get a new job"
+      ],
+      "o": [
+        "wear new clothes",
+        "visit grandparents and relatives",
+        "say good wishes",
+        "get a new job"
+      ],
+      "en": "The passage does not say children get a new job.",
+      "vi": "Đoạn văn không nói trẻ em có việc làm mới.",
+      "c": "get lucky money",
+      "ce": "receive money as a Tet gift",
+      "cv": "nhận lì xì",
+      "state": "ready"
+    },
+    {
+      "n": 30,
+      "q": "Con Dao is an island in the South of Viet Nam. The sea is clean and clear. People can go diving to see fish. It is quiet and peaceful.\\nWhere is Con Dao? — It is in the ___ of Viet Nam.",
+      "a": [
+        "South"
+      ],
+      "o": [
+        "South",
+        "North",
+        "West",
+        "East"
+      ],
+      "en": "The first sentence says in the South of Viet Nam.",
+      "vi": "Câu đầu nói ở miền Nam Việt Nam.",
+      "c": "go diving",
+      "ce": "swim under water to explore",
+      "cv": "đi lặn",
+      "state": "ready"
+    },
+    {
+      "n": 31,
+      "q": "Let's go out for lunch. There ___ any rice in the kitchen.",
+      "a": [
+        "isn't"
+      ],
+      "o": [
+        "not",
+        "isn't",
+        "is no",
+        "no"
+      ],
+      "en": "Use isn't any with uncountable rice.",
+      "vi": "Dùng isn't any với rice không đếm được.",
+      "c": "any rice",
+      "ce": "rice in a question or negative sentence",
+      "cv": "chút cơm hoặc gạo nào trong câu hỏi hay câu phủ định",
+      "state": "ready"
+    },
+    {
+      "n": 32,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "machine"
+      ],
+      "o": [
+        "<u>ch<\/u>urch",
+        "<u>ch<\/u>air",
+        "ma<u>ch<\/u>ine",
+        "kit<u>ch<\/u>en"
+      ],
+      "en": "Ch is /ʃ/ in machine, but /tʃ/ in the other words.",
+      "vi": "Ch đọc /ʃ/ trong machine, nhưng đọc /tʃ/ trong các từ còn lại.",
+      "c": "a washing machine",
+      "ce": "a machine that washes clothes",
+      "cv": "máy giặt",
+      "state": "ready"
+    },
+    {
+      "n": 33,
+      "q": "We can write 863 in words as eight hundred and ___ three.",
+      "a": [
+        "sixty"
+      ],
+      "o": [],
+      "en": "863 is eight hundred and sixty-three.",
+      "vi": "863 viết là eight hundred and sixty-three.",
+      "c": "eight hundred and sixty-three",
+      "ce": "the number 863",
+      "cv": "số 863",
+      "state": "ready"
+    },
+    {
+      "n": 34,
+      "q": "She must ___ at her grandparents' house on the first day of Tet.",
+      "a": [
+        "be",
+        "stay"
+      ],
+      "o": [],
+      "en": "After must, use a base verb. Be and stay both fit this open sentence.",
+      "vi": "Sau must, dùng động từ nguyên mẫu. Cả be và stay đều phù hợp câu mở này.",
+      "c": "on the first day",
+      "ce": "on day number one",
+      "cv": "vào ngày đầu tiên",
+      "state": "ready"
+    },
+    {
+      "n": 35,
+      "q": "any / the shelf? / books / on / Are there",
+      "a": [
+        "Are there any books on the shelf?"
+      ],
+      "o": [],
+      "en": "Use Are there any + plural noun + place?",
+      "vi": "Dùng Are there any + danh từ số nhiều + địa điểm?",
+      "c": "on the shelf",
+      "ce": "on a flat board used to hold things",
+      "cv": "trên kệ",
+      "state": "ready"
+    },
+    {
+      "n": 36,
+      "q": "The woman ___ beautiful in a white dress.",
+      "a": [
+        "looks",
+        "is",
+        "seems"
+      ],
+      "o": [],
+      "en": "Looks, is and seems can all come before beautiful.",
+      "vi": "Looks, is và seems đều có thể đứng trước beautiful.",
+      "c": "a white dress",
+      "ce": "a dress that is white",
+      "cv": "một chiếc váy trắng",
+      "state": "ready"
+    },
+    {
+      "n": 37,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "circle"
+      ],
+      "o": [
+        "p<u>o<\/u>ster",
+        "c<u>ir<\/u>cle",
+        "s<u>o<\/u>fa",
+        "h<u>o<\/u>me"
+      ],
+      "en": "In British English, circle has /ɜː/. The marked vowel in poster, sofa and home has /əʊ/.",
+      "vi": "Trong Anh-Anh, circle có âm /ɜː/. Nguyên âm được gạch chân trong poster, sofa và home có âm /əʊ/.",
+      "c": "at home",
+      "ce": "in the place where you live",
+      "cv": "ở nhà",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 38,
+      "q": "What is the name of a fairy tale?",
+      "a": [
+        "Sleeping Beauty"
+      ],
+      "o": [
+        "Germany",
+        "Mount Fuji",
+        "Moon",
+        "Sleeping Beauty"
+      ],
+      "en": "Sleeping Beauty is a fairy tale. The other choices are places or the Moon.",
+      "vi": "Sleeping Beauty là truyện cổ tích. Các lựa chọn khác là địa danh hoặc Mặt Trăng.",
+      "c": "a fairy tale",
+      "ce": "a story with magic",
+      "cv": "truyện cổ tích",
+      "state": "ready"
+    },
+    {
+      "n": 39,
+      "q": "to the bookshop / to buy / some books. / now because / she wants / Hang goes",
+      "a": [
+        "Hang goes to the bookshop now because she wants to buy some books."
+      ],
+      "o": [],
+      "en": "Because introduces the reason. Wants takes to buy.",
+      "vi": "Because mở đầu lý do. Sau wants dùng to buy.",
+      "c": "go to the bookshop",
+      "ce": "visit a shop that sells books",
+      "cv": "đến hiệu sách",
+      "state": "ready"
+    },
+    {
+      "n": 40,
+      "q": "Kangaroos use their strong l___s to hop.",
+      "a": [
+        "legs"
+      ],
+      "o": [],
+      "en": "Kangaroos hop with their legs. Type the whole word.",
+      "vi": "Chuột túi nhảy bằng chân. Gõ cả từ.",
+      "c": "strong legs",
+      "ce": "legs with a lot of strength",
+      "cv": "đôi chân khỏe",
+      "state": "ready"
+    },
+    {
+      "n": 41,
+      "q": "the Mid-Autumn festival. / The children / about / are excited",
+      "a": [
+        "The children are excited about the Mid-Autumn festival."
+      ],
+      "o": [],
+      "en": "Use be excited about something.",
+      "vi": "Dùng be excited about something: hào hứng về việc gì.",
+      "c": "be excited about",
+      "ce": "feel happy about something that will happen",
+      "cv": "hào hứng về",
+      "state": "ready"
+    },
+    {
+      "n": 42,
+      "q": "We have dinner at about half ___ seven.",
+      "a": [
+        "past"
+      ],
+      "o": [],
+      "en": "Half past seven means 7:30.",
+      "vi": "Half past seven nghĩa là 7 giờ 30.",
+      "c": "half past seven",
+      "ce": "thirty minutes after seven",
+      "cv": "7 giờ 30",
+      "state": "ready"
+    },
+    {
+      "n": 43,
+      "q": "Choose the question for the underlined part: It takes me <u>40 minutes<\/u> to get to the airport.",
+      "a": [
+        "How long does it take you to get to the airport?"
+      ],
+      "o": [
+        "How long does it take you to get to the airport?",
+        "How often does it take you to get to the airport?",
+        "How much does it take you to get to the airport?",
+        "How far does it take you to get to the airport?"
+      ],
+      "en": "40 minutes is a length of time. Ask How long…?",
+      "vi": "40 minutes là khoảng thời gian. Dùng How long…? để hỏi.",
+      "c": "How long does it take…?",
+      "ce": "ask how much time something needs",
+      "cv": "hỏi việc gì mất bao lâu",
+      "state": "ready"
+    },
+    {
+      "n": 44,
+      "q": "Hung King Temple / you going / How are / next weekend? / to get to",
+      "a": [
+        "How are you going to get to Hung King Temple next weekend?"
+      ],
+      "o": [],
+      "en": "Use How are you going to + base verb…? to ask about a plan.",
+      "vi": "Dùng How are you going to + động từ nguyên mẫu…? để hỏi kế hoạch.",
+      "c": "get to a place",
+      "ce": "arrive at a place",
+      "cv": "đến một nơi",
+      "state": "ready"
+    },
+    {
+      "n": 45,
+      "q": "They ___ the bus, so they were late for school.",
+      "a": [
+        "missed"
+      ],
+      "o": [
+        "got",
+        "drove",
+        "took",
+        "missed"
+      ],
+      "en": "They did not catch the bus. Missed explains why they were late.",
+      "vi": "Họ không kịp xe buýt. Missed giải thích lý do đi học muộn.",
+      "c": "miss the bus",
+      "ce": "arrive too late to catch a bus",
+      "cv": "lỡ xe buýt",
+      "state": "ready"
+    },
+    {
+      "n": 46,
+      "q": "The streets in the old quarter in Ha Noi are not wide. They are ___.",
+      "a": [
+        "narrow"
+      ],
+      "o": [
+        "big",
+        "quiet",
+        "large",
+        "narrow"
+      ],
+      "en": "Narrow is the opposite of wide.",
+      "vi": "Narrow trái nghĩa với wide.",
+      "c": "narrow streets",
+      "ce": "streets that are not wide",
+      "cv": "những con phố hẹp",
+      "state": "ready"
+    },
+    {
+      "n": 47,
+      "q": "___ was the last time you saw him? — Last month.",
+      "a": [
+        "When"
+      ],
+      "o": [],
+      "en": "Last month answers a question about time. Use When.",
+      "vi": "Last month trả lời về thời gian. Dùng When.",
+      "c": "the last time",
+      "ce": "the most recent occasion",
+      "cv": "lần gần đây nhất",
+      "state": "ready"
+    },
+    {
+      "n": 48,
+      "q": "There ___ some carrots in the backyard.",
+      "a": [
+        "are"
+      ],
+      "o": [
+        "is",
+        "much",
+        "any",
+        "are"
+      ],
+      "en": "Carrots is plural. Use There are.",
+      "vi": "Carrots là số nhiều. Dùng There are.",
+      "c": "in the backyard",
+      "ce": "in the area behind a house",
+      "cv": "ở sân sau",
+      "state": "ready"
+    },
+    {
+      "n": 49,
+      "q": "wish / We should / a / make / at Tet",
+      "a": [
+        "We should make a wish at Tet."
+      ],
+      "o": [],
+      "en": "Use should + base verb. Keep make a wish together.",
+      "vi": "Dùng should + động từ nguyên mẫu. Giữ cụm make a wish liền nhau.",
+      "c": "make a wish",
+      "ce": "think of something you hope will happen",
+      "cv": "ước một điều",
+      "state": "ready"
+    },
+    {
+      "n": 51,
+      "q": "Tet is/ a time/ family/ reunion./ for",
+      "a": [
+        "Tet is a time for family reunion."
+      ],
+      "o": [],
+      "en": "Use a time for + noun phrase.",
+      "vi": "Dùng a time for + cụm danh từ.",
+      "c": "family reunion",
+      "ce": "an occasion when family members meet again",
+      "cv": "sum họp gia đình",
+      "state": "ready"
+    },
+    {
+      "n": 52,
+      "q": "Choose the word with different main stress.",
+      "a": [
+        "effective"
+      ],
+      "o": [
+        "favorite",
+        "popular",
+        "effective",
+        "beautiful"
+      ],
+      "en": "Effective stresses the second syllable: ef-FEC-tive. The others stress the first.",
+      "vi": "Effective nhấn âm hai: ef-FEC-tive. Các từ còn lại nhấn âm đầu.",
+      "c": "an effective way",
+      "ce": "a way that works well",
+      "cv": "một cách hiệu quả",
+      "state": "ready"
+    },
+    {
+      "n": 53,
+      "q": "Choose the correct comparison: Doing homework / playing video games. (boring)",
+      "a": [
+        "Doing homework is more boring than playing video games."
+      ],
+      "o": [
+        "Doing homework is boring as playing video games.",
+        "Doing homework is more boring than playing video games.",
+        "Doing homework is boringer than playing video games.",
+        "Doing homework is boring then playing video games."
+      ],
+      "en": "For boring, use more boring than to compare two activities.",
+      "vi": "Với boring, dùng more boring than để so sánh hai hoạt động.",
+      "c": "play video games",
+      "ce": "play electronic games",
+      "cv": "chơi trò chơi điện tử",
+      "state": "ready"
+    },
+    {
+      "n": 54,
+      "q": "It often rains ___ in the summer.",
+      "a": [
+        "a lot"
+      ],
+      "o": [
+        "a lot",
+        "little",
+        "any",
+        "many"
+      ],
+      "en": "A lot can describe the verb rains. Many needs a countable noun.",
+      "vi": "A lot có thể bổ nghĩa cho rains. Many cần danh từ đếm được.",
+      "c": "rain a lot",
+      "ce": "have a large amount of rain",
+      "cv": "mưa nhiều",
+      "state": "ready"
+    },
+    {
+      "n": 55,
+      "q": "How about putting a folk painting ___ the wall?",
+      "a": [
+        "on"
+      ],
+      "o": [
+        "in",
+        "on",
+        "above",
+        "of"
+      ],
+      "en": "A painting is normally put on the wall.",
+      "vi": "Tranh thường được treo trên tường: on the wall.",
+      "c": "a folk painting",
+      "ce": "a painting in a traditional local style",
+      "cv": "tranh dân gian",
+      "state": "ready"
+    },
+    {
+      "n": 56,
+      "q": "He ___ the piano in the music room now.",
+      "a": [
+        "is practicing"
+      ],
+      "o": [
+        "practice",
+        "practices",
+        "is practicing",
+        "practicing"
+      ],
+      "en": "Now shows an action happening at this moment. Use is practicing.",
+      "vi": "Now chỉ hành động đang diễn ra. Dùng is practicing.",
+      "c": "practice the piano",
+      "ce": "play the piano to improve",
+      "cv": "luyện đàn piano",
+      "state": "ready"
+    },
+    {
+      "n": 57,
+      "q": "A: How do you feel about Tet?\\nB: I feel very happy and excited.\\nA: Why?\\nB: Because I can meet my family and friends.\\nStudent B can meet family and friends at Tet. True or false?",
+      "a": [
+        "true"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "B says I can meet my family and friends.",
+      "vi": "B nói I can meet my family and friends.",
+      "c": "meet family and friends",
+      "ce": "spend time with people you know",
+      "cv": "gặp gia đình và bạn bè",
+      "state": "ready"
+    },
+    {
+      "n": 58,
+      "q": "Yoko always has l___ at a Japan restaurant.",
+      "a": [
+        "lunch"
+      ],
+      "o": [],
+      "en": "Lunch is the expected meal beginning with l. Type the whole word. Natural English uses a Japanese restaurant.",
+      "vi": "Lunch là bữa ăn cần điền, bắt đầu bằng l. Gõ cả từ. Cách nói tự nhiên là a Japanese restaurant.",
+      "c": "have lunch",
+      "ce": "eat your midday meal",
+      "cv": "ăn trưa",
+      "state": "ready"
+    },
+    {
+      "n": 59,
+      "q": "The winner ran very ___.",
+      "a": [
+        "fast",
+        "slowly",
+        "slow"
+      ],
+      "o": [
+        "slow",
+        "fast",
+        "slowly",
+        "fastly"
+      ],
+      "en": "Fast is the likely intended answer. Slowly and the informal adverb slow also make grammatical sentences. Fastly is not standard.",
+      "vi": "Fast có lẽ là đáp án dự kiến. Slowly và trạng từ thân mật slow cũng tạo câu đúng ngữ pháp. Fastly không phải từ chuẩn.",
+      "c": "run fast",
+      "ce": "move quickly on your feet",
+      "cv": "chạy nhanh",
+      "state": "ready"
+    },
+    {
+      "n": 60,
+      "q": "It's not necessary to bring any flowers. You don't _____ bring any flowers.",
+      "a": [
+        "have to",
+        "need to"
+      ],
+      "o": [],
+      "en": "Don't have to and don't need to mean it is not necessary.",
+      "vi": "Don't have to và don't need to đều nghĩa là không cần thiết.",
+      "c": "don't have to",
+      "ce": "do not need to",
+      "cv": "không cần phải",
+      "state": "ready"
+    },
+    {
+      "n": 61,
+      "q": "turn/ off/ You/ the lights./ must",
+      "a": [
+        "You must turn off the lights."
+      ],
+      "o": [],
+      "en": "Use must + base verb. Keep turn off together.",
+      "vi": "Dùng must + động từ nguyên mẫu. Giữ turn off liền nhau.",
+      "c": "turn off the lights",
+      "ce": "stop the lights working",
+      "cv": "tắt đèn",
+      "state": "ready"
+    },
+    {
+      "n": 62,
+      "q": "Disney Channel is one of the most ___ channels ___ children.",
+      "a": [
+        "popular - for"
+      ],
+      "o": [
+        "beautiful - to",
+        "popular - for",
+        "good - of",
+        "exciting - to"
+      ],
+      "en": "Use popular to describe a well-liked channel, and for to show its audience.",
+      "vi": "Dùng popular cho kênh được yêu thích, và for để chỉ đối tượng xem.",
+      "c": "popular with children",
+      "ce": "liked by many children",
+      "cv": "được nhiều trẻ em yêu thích",
+      "state": "ready"
+    },
+    {
+      "n": 63,
+      "q": "___ are you travelling to Da Nang City? — By taxi.",
+      "a": [
+        "How"
+      ],
+      "o": [
+        "When",
+        "What",
+        "Which",
+        "How"
+      ],
+      "en": "By taxi tells us the way of travelling. Ask How…?",
+      "vi": "By taxi nói phương tiện di chuyển. Dùng How…? để hỏi.",
+      "c": "by taxi",
+      "ce": "travelling in a taxi",
+      "cv": "bằng taxi",
+      "state": "ready"
+    },
+    {
+      "n": 64,
+      "q": "You should arrive at the airport two hours b___ the flight.",
+      "a": [
+        "before"
+      ],
+      "o": [],
+      "en": "Before means earlier than. Type the whole word.",
+      "vi": "Before nghĩa là trước. Gõ cả từ.",
+      "c": "before the flight",
+      "ce": "earlier than the plane's departure",
+      "cv": "trước chuyến bay",
+      "state": "ready"
+    },
+    {
+      "n": 66,
+      "q": "Seeing a movie at the cinema is ____ than watching TV at home. (interesting)",
+      "a": [
+        "more interesting"
+      ],
+      "o": [],
+      "en": "Interesting is a long adjective. Use more interesting than to compare two activities.",
+      "vi": "Interesting là tính từ dài. Dùng more interesting than để so sánh hai hoạt động.",
+      "c": "more interesting than",
+      "ce": "making you want to know or watch more than something else",
+      "cv": "thú vị hơn",
+      "adapted": true,
+      "state": "ready"
+    }
+  ],
+  [
+    {
+      "n": 1,
+      "q": "It is the third month of the year. Complete the word: MA___.",
+      "a": [
+        "March"
+      ],
+      "o": [],
+      "en": "March is month number three. Type the whole word: March.",
+      "vi": "March là tháng thứ ba. Gõ cả từ: March.",
+      "c": "the third month",
+      "ce": "month number three",
+      "cv": "tháng thứ ba",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 2,
+      "q": "___ — She usually visits her grandparents.",
+      "a": [
+        "How often does she visit her grandparents?"
+      ],
+      "o": [
+        "What is she doing at the moment?",
+        "How often does she visit her grandparents?",
+        "When does she visit her grandparents?",
+        "Where does she visit her grandparents?"
+      ],
+      "en": "Usually tells us how often something happens. Ask How often…?",
+      "vi": "Usually cho biết tần suất. Dùng How often…? để hỏi.",
+      "c": "visit grandparents",
+      "ce": "go and see your grandparents",
+      "cv": "thăm ông bà",
+      "state": "ready"
+    },
+    {
+      "n": 3,
+      "q": "He ___ a book in his room right now.",
+      "a": [
+        "is reading"
+      ],
+      "o": [
+        "read",
+        "reads",
+        "is reading",
+        "reading"
+      ],
+      "en": "Right now means at this moment. Use is reading.",
+      "vi": "Right now nghĩa là ngay lúc này. Dùng is reading.",
+      "c": "read a book",
+      "ce": "look at and understand a book's words",
+      "cv": "đọc sách",
+      "state": "ready"
+    },
+    {
+      "n": 4,
+      "q": "We are having an exam ___ January 10th.",
+      "a": [
+        "on"
+      ],
+      "o": [],
+      "en": "Use on before a specific date.",
+      "vi": "Dùng on trước ngày cụ thể.",
+      "c": "have an exam",
+      "ce": "take a test",
+      "cv": "thi hoặc làm bài kiểm tra",
+      "state": "ready"
+    },
+    {
+      "n": 5,
+      "q": "Anna finds a wallet in the school yard. She gives it to the teacher. Anna is h___t.",
+      "a": [
+        "honest"
+      ],
+      "o": [],
+      "en": "An honest person does not keep money that belongs to someone else. Type the whole word.",
+      "vi": "Người trung thực không giữ tiền của người khác. Gõ cả từ.",
+      "c": "an honest person",
+      "ce": "someone who tells the truth and does not steal",
+      "cv": "người trung thực",
+      "state": "ready"
+    },
+    {
+      "n": 6,
+      "q": "He's visiting the museum ___ his class.",
+      "a": [
+        "with"
+      ],
+      "o": [],
+      "en": "With means together with other people.",
+      "vi": "With nghĩa là cùng với người khác.",
+      "c": "with his class",
+      "ce": "together with his classmates",
+      "cv": "cùng lớp của cậu ấy",
+      "state": "ready"
+    },
+    {
+      "n": 7,
+      "q": "Are there ___ museums or galleries?",
+      "a": [
+        "any",
+        "some"
+      ],
+      "o": [],
+      "en": "Any is the usual choice in a general question. Some is possible when expecting yes.",
+      "vi": "Any thường dùng trong câu hỏi chung. Some cũng có thể dùng khi mong đợi câu trả lời có.",
+      "c": "museums and galleries",
+      "ce": "places to see objects and art",
+      "cv": "bảo tàng và phòng trưng bày",
+      "state": "ready"
+    },
+    {
+      "n": 8,
+      "q": "In the afternoon, he walks ___ space.",
+      "a": [
+        "in"
+      ],
+      "o": [],
+      "en": "Use in space to describe being outside Earth. This is likely about an astronaut.",
+      "vi": "Dùng in space để chỉ ở ngoài không gian. Câu này có thể nói về phi hành gia.",
+      "c": "in space",
+      "ce": "outside Earth's atmosphere",
+      "cv": "trong không gian",
+      "state": "ready"
+    },
+    {
+      "n": 9,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "knock"
+      ],
+      "o": [
+        "<u>k<\/u>ind",
+        "<u>k<\/u>ick",
+        "<u>k<\/u>nock",
+        "stri<u>k<\/u>e"
+      ],
+      "en": "The k in knock is silent. The marked k in the other words is /k/.",
+      "vi": "Chữ k trong knock không được phát âm. K được gạch chân trong các từ còn lại đọc /k/.",
+      "c": "knock on the door",
+      "ce": "hit a door gently to ask to come in",
+      "cv": "gõ cửa",
+      "state": "ready"
+    },
+    {
+      "n": 10,
+      "q": "A dog is an AN____, not a plant. Complete the word.",
+      "a": [
+        "animal"
+      ],
+      "o": [],
+      "en": "A dog is an animal. Animal starts with an. Type the whole word.",
+      "vi": "Chó là một loài động vật. Animal bắt đầu bằng an. Gõ cả từ.",
+      "c": "an animal",
+      "ce": "a living thing such as a dog, bird or fish",
+      "cv": "một con vật",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 11,
+      "q": "I can't lend you this book ___ I'm still reading it.",
+      "a": [
+        "because"
+      ],
+      "o": [
+        "because",
+        "so",
+        "and",
+        "but"
+      ],
+      "en": "Because introduces the reason I cannot lend the book.",
+      "vi": "Because mở đầu lý do tôi không thể cho mượn sách.",
+      "c": "lend someone a book",
+      "ce": "let someone borrow a book",
+      "cv": "cho ai mượn sách",
+      "state": "ready"
+    },
+    {
+      "n": 12,
+      "q": "this weekend?/ are/ to do/ you going/ What",
+      "a": [
+        "What are you going to do this weekend?"
+      ],
+      "o": [],
+      "en": "Use What + are you going to + do…? to ask about a plan.",
+      "vi": "Dùng What + are you going to + do…? để hỏi kế hoạch.",
+      "c": "this weekend",
+      "ce": "on the coming Saturday and Sunday",
+      "cv": "cuối tuần này",
+      "state": "ready"
+    },
+    {
+      "n": 13,
+      "q": "I have met BTS, but I couldn't take ___ pictures with them.",
+      "a": [
+        "any"
+      ],
+      "o": [
+        "much",
+        "any",
+        "some of",
+        "more"
+      ],
+      "en": "Any is the expected choice in this negative sentence. More would mean extra pictures and needs extra context.",
+      "vi": "Any là lựa chọn phù hợp trong câu phủ định này. More nghĩa là thêm ảnh và cần ngữ cảnh bổ sung.",
+      "c": "take pictures",
+      "ce": "make photos with a camera",
+      "cv": "chụp ảnh",
+      "state": "ready"
+    },
+    {
+      "n": 14,
+      "q": "Nam: At Tet, my family has a special meal. On New Year's Eve, we go outside and watch fireworks together.\nNam's family watches fireworks at Tet. True or false?",
+      "a": [
+        "true"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "Nam says his family watches fireworks together. The statement is true.",
+      "vi": "Nam nói gia đình cùng xem pháo hoa. Nhận định đúng.",
+      "c": "watch fireworks",
+      "ce": "look at colourful lights exploding in the sky",
+      "cv": "xem pháo hoa",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 15,
+      "q": "Smoking is prohibited inside the hospital. You mustn't ___ ___ the hospital.",
+      "a": [
+        "smoke inside",
+        "smoke in"
+      ],
+      "o": [],
+      "en": "Mustn't means it is not allowed. Use the base verb smoke.",
+      "vi": "Mustn't nghĩa là không được phép. Dùng động từ nguyên mẫu smoke.",
+      "c": "mustn't smoke",
+      "ce": "smoking is not allowed",
+      "cv": "không được hút thuốc",
+      "state": "ready"
+    },
+    {
+      "n": 16,
+      "q": "The opposite of THICK is ___.",
+      "a": [
+        "thin"
+      ],
+      "o": [],
+      "en": "Thin is the opposite of thick.",
+      "vi": "Thin trái nghĩa với thick.",
+      "c": "thick and thin",
+      "ce": "having a large or small distance between opposite sides",
+      "cv": "dày và mỏng",
+      "state": "ready"
+    },
+    {
+      "n": 17,
+      "q": "Which animal lives in water?",
+      "a": [
+        "Octopus"
+      ],
+      "o": [
+        "Deer",
+        "Elephant",
+        "Octopus",
+        "Lion"
+      ],
+      "en": "An octopus lives in the sea.",
+      "vi": "Bạch tuộc sống ở biển.",
+      "c": "live in water",
+      "ce": "have a home in water",
+      "cv": "sống dưới nước",
+      "state": "ready"
+    },
+    {
+      "n": 18,
+      "q": "Owen and his father ___ fishing in the river near his house.",
+      "a": [
+        "go"
+      ],
+      "o": [
+        "is going",
+        "going",
+        "go",
+        "goes"
+      ],
+      "en": "Owen and his father means two people. Use go.",
+      "vi": "Owen and his father là hai người. Dùng go.",
+      "c": "go fishing",
+      "ce": "try to catch fish",
+      "cv": "đi câu cá",
+      "state": "ready"
+    },
+    {
+      "n": 19,
+      "q": "in/ the park./ are/ The kids/ playing",
+      "a": [
+        "The kids are playing in the park."
+      ],
+      "o": [],
+      "en": "Put the subject first, then are playing and the place.",
+      "vi": "Đặt chủ ngữ trước, tiếp đến are playing và địa điểm.",
+      "c": "play in the park",
+      "ce": "have fun in a public green space",
+      "cv": "chơi trong công viên",
+      "state": "ready"
+    },
+    {
+      "n": 20,
+      "q": "She always/ gets up/ has breakfast/ early and/ at half past six.",
+      "a": [
+        "She always gets up early and has breakfast at half past six."
+      ],
+      "o": [],
+      "en": "Always goes before gets up. And joins the two actions.",
+      "vi": "Always đứng trước gets up. And nối hai hành động.",
+      "c": "get up early",
+      "ce": "leave your bed early in the day",
+      "cv": "dậy sớm",
+      "state": "ready"
+    },
+    {
+      "n": 21,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "famous"
+      ],
+      "o": [
+        "n<u>a<\/u>tural",
+        "<u>a<\/u>nimal",
+        "f<u>a<\/u>mous",
+        "h<u>a<\/u>ppen"
+      ],
+      "en": "Famous has /eɪ/. The other marked vowels have /æ/.",
+      "vi": "Famous có âm /eɪ/. Các nguyên âm được gạch chân còn lại có âm /æ/.",
+      "c": "a famous person",
+      "ce": "someone many people know",
+      "cv": "một người nổi tiếng",
+      "state": "ready"
+    },
+    {
+      "n": 22,
+      "q": "A: Do you know Phong Nha Cave?\\nB: Yes, it is very famous.\\nA: Would you like to visit it one day?\\nB: Of course, I love nature and adventure.\\nStudent B does not want to visit Phong Nha Cave. True or false?",
+      "a": [
+        "false"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "Of course is a positive answer. B wants to visit the cave.",
+      "vi": "Of course là lời đồng ý. B muốn đến thăm hang động.",
+      "c": "love nature",
+      "ce": "enjoy the natural world",
+      "cv": "yêu thiên nhiên",
+      "state": "ready"
+    },
+    {
+      "n": 23,
+      "q": "Choose the word with different main stress.",
+      "a": [
+        "allow"
+      ],
+      "o": [
+        "reading",
+        "practice",
+        "science",
+        "allow"
+      ],
+      "en": "Allow stresses the second syllable: al-LOW. The others stress the first.",
+      "vi": "Allow nhấn âm hai: al-LOW. Các từ còn lại nhấn âm đầu.",
+      "c": "allow someone to do something",
+      "ce": "let someone do something",
+      "cv": "cho phép ai làm gì",
+      "state": "ready"
+    },
+    {
+      "n": 24,
+      "q": "A: How do you feel about Tet?\\nB: I feel very happy and excited.\\nA: Why?\\nB: Because I can meet my family and friends.\\nStudent B can meet family and friends at Tet. True or false?",
+      "a": [
+        "true"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "B directly says I can meet my family and friends.",
+      "vi": "B nói rõ I can meet my family and friends.",
+      "c": "at Tet",
+      "ce": "during the Vietnamese New Year holiday",
+      "cv": "vào dịp Tết",
+      "state": "ready"
+    },
+    {
+      "n": 25,
+      "q": "cleaning/ the/ furniture./ We're",
+      "a": [
+        "We're cleaning the furniture."
+      ],
+      "o": [],
+      "en": "We're means We are. Use are + cleaning for an action now.",
+      "vi": "We're là We are. Dùng are + cleaning cho hành động đang diễn ra.",
+      "c": "clean the furniture",
+      "ce": "remove dirt from tables, chairs and similar things",
+      "cv": "lau chùi đồ đạc",
+      "state": "ready"
+    },
+    {
+      "n": 26,
+      "q": "They grow vegetables and fruit from seeds and they hu_____ animals for their meat.",
+      "a": [
+        "hunt"
+      ],
+      "o": [],
+      "en": "Hunt means catch or kill animals for food. Type the whole word.",
+      "vi": "Hunt nghĩa là săn động vật để lấy thức ăn. Gõ cả từ.",
+      "c": "grow vegetables",
+      "ce": "produce vegetables in soil",
+      "cv": "trồng rau",
+      "state": "ready"
+    },
+    {
+      "n": 27,
+      "q": "June is ___ of the year.",
+      "a": [
+        "the sixth month"
+      ],
+      "o": [
+        "the first quarter",
+        "the sixth month",
+        "the fifth week",
+        "the six day"
+      ],
+      "en": "June is month number six.",
+      "vi": "June là tháng thứ sáu.",
+      "c": "the sixth month",
+      "ce": "month number six",
+      "cv": "tháng thứ sáu",
+      "state": "ready"
+    },
+    {
+      "n": 28,
+      "q": "His parents ___ go for a walk on rainy days.",
+      "a": [
+        "don't"
+      ],
+      "o": [
+        "doesn't",
+        "don't",
+        "isn't",
+        "aren't"
+      ],
+      "en": "Parents is plural. Use don't + base verb.",
+      "vi": "Parents là số nhiều. Dùng don't + động từ nguyên mẫu.",
+      "c": "go for a walk",
+      "ce": "walk for pleasure",
+      "cv": "đi dạo",
+      "state": "ready"
+    },
+    {
+      "n": 29,
+      "q": "start?/ What time/ the concert/ does",
+      "a": [
+        "What time does the concert start?"
+      ],
+      "o": [],
+      "en": "Use What time + does + singular subject + base verb?",
+      "vi": "Dùng What time + does + chủ ngữ số ít + động từ nguyên mẫu?",
+      "c": "What time does it start?",
+      "ce": "ask when something begins",
+      "cv": "hỏi mấy giờ bắt đầu",
+      "state": "ready"
+    },
+    {
+      "n": 30,
+      "q": "good luck./ buy/ They/ salt/ for",
+      "a": [
+        "They buy salt for good luck."
+      ],
+      "o": [],
+      "en": "Put They first, then buy + salt + for good luck.",
+      "vi": "Đặt They trước, sau đó buy + salt + for good luck.",
+      "c": "for good luck",
+      "ce": "in the hope of good things happening",
+      "cv": "để cầu may mắn",
+      "state": "ready"
+    },
+    {
+      "n": 31,
+      "q": "Mai: At Tet, we say kind words and wish everyone good luck. We do not say bad words in our family.\nPeople in Mai's family say bad words at Tet. True or false?",
+      "a": [
+        "false"
+      ],
+      "o": [
+        "True",
+        "False"
+      ],
+      "en": "Mai says We do not say bad words. The statement says the opposite, so it is false.",
+      "vi": "Mai nói We do not say bad words. Nhận định nêu điều ngược lại nên sai.",
+      "c": "wish someone good luck",
+      "ce": "tell someone you hope good things happen to them",
+      "cv": "chúc ai may mắn",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 32,
+      "q": "There's a post office on the cor__ of the street.",
+      "a": [
+        "corner"
+      ],
+      "o": [],
+      "en": "A corner is where two streets or sides meet. Type the whole word.",
+      "vi": "Corner là góc nơi hai đường hoặc cạnh gặp nhau. Gõ cả từ.",
+      "c": "on the corner",
+      "ce": "where two streets meet",
+      "cv": "ở góc phố",
+      "state": "ready"
+    },
+    {
+      "n": 33,
+      "q": "Find the odd one out.",
+      "a": [
+        "cooker"
+      ],
+      "o": [
+        "teacher",
+        "engineer",
+        "cooker",
+        "journalist"
+      ],
+      "en": "A cooker is a kitchen appliance. The other words are jobs. A person who cooks is a cook.",
+      "vi": "Cooker là thiết bị nấu ăn. Các từ còn lại là nghề nghiệp. Người nấu ăn là cook.",
+      "c": "a kitchen appliance",
+      "ce": "a machine used in a kitchen",
+      "cv": "thiết bị nhà bếp",
+      "state": "ready"
+    },
+    {
+      "n": 34,
+      "q": "You read a b___ in the library. Complete the word.",
+      "a": [
+        "book"
+      ],
+      "o": [],
+      "en": "A book has pages that you read. Type the whole word: book.",
+      "vi": "Book là sách, có các trang để đọc. Gõ cả từ: book.",
+      "c": "read a book",
+      "ce": "look at and understand the words in a book",
+      "cv": "đọc sách",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 35,
+      "q": "In December, China is ___ than Viet Nam.",
+      "a": [
+        "colder"
+      ],
+      "o": [
+        "cold",
+        "colder",
+        "more colder",
+        "more cold"
+      ],
+      "en": "Cold has one syllable. Add -er: colder. Do not add more as well.",
+      "vi": "Cold có một âm tiết. Thêm -er: colder. Không dùng thêm more.",
+      "c": "colder than",
+      "ce": "having a lower temperature than",
+      "cv": "lạnh hơn",
+      "state": "ready"
+    },
+    {
+      "n": 36,
+      "q": "His persona___ is loving and friendly.",
+      "a": [
+        "personality"
+      ],
+      "o": [],
+      "en": "Personality means the kind of person someone is. Type the whole word.",
+      "vi": "Personality nghĩa là tính cách. Gõ cả từ.",
+      "c": "a friendly personality",
+      "ce": "a kind and welcoming character",
+      "cv": "tính cách thân thiện",
+      "state": "ready"
+    },
+    {
+      "n": 37,
+      "q": "my friends/ think that/ Many of/ talkative./ I am quite",
+      "a": [
+        "Many of my friends think that I am quite talkative."
+      ],
+      "o": [],
+      "en": "Many of goes before my friends. Think that introduces their opinion.",
+      "vi": "Many of đứng trước my friends. Think that mở đầu ý kiến của họ.",
+      "c": "quite talkative",
+      "ce": "talking a fairly large amount",
+      "cv": "khá hoạt ngôn",
+      "state": "ready"
+    },
+    {
+      "n": 38,
+      "q": "Danny ___ his dog three times a week.",
+      "a": [
+        "walks"
+      ],
+      "o": [
+        "is walking",
+        "walk",
+        "walks",
+        "walking"
+      ],
+      "en": "Three times a week shows a habit. With Danny, use walks.",
+      "vi": "Three times a week chỉ thói quen. Với Danny, dùng walks.",
+      "c": "three times a week",
+      "ce": "on three occasions each week",
+      "cv": "ba lần một tuần",
+      "state": "ready"
+    },
+    {
+      "n": 39,
+      "q": "___ many interesting places to visit in Viet Nam.",
+      "a": [
+        "There are"
+      ],
+      "o": [
+        "There do",
+        "There does",
+        "There are",
+        "There is"
+      ],
+      "en": "Places is plural. Use There are.",
+      "vi": "Places là danh từ số nhiều. Dùng There are.",
+      "c": "interesting places",
+      "ce": "places people enjoy visiting or learning about",
+      "cv": "những địa điểm thú vị",
+      "state": "ready"
+    },
+    {
+      "n": 40,
+      "q": "Do you want to do ___ sports this Sunday?",
+      "a": [
+        "any",
+        "some"
+      ],
+      "o": [],
+      "en": "Any is common in a general question. Some is also possible when suggesting an activity.",
+      "vi": "Any thường dùng trong câu hỏi chung. Some cũng phù hợp khi gợi ý hoạt động.",
+      "c": "do sports",
+      "ce": "take part in physical activities",
+      "cv": "chơi thể thao",
+      "state": "ready"
+    },
+    {
+      "n": 41,
+      "q": "Kangaroos use their strong l__s to hop.",
+      "a": [
+        "legs"
+      ],
+      "o": [],
+      "en": "They use their legs for jumping. Type the whole word.",
+      "vi": "Chúng dùng chân để nhảy. Gõ cả từ.",
+      "c": "strong legs",
+      "ce": "legs with a lot of strength",
+      "cv": "đôi chân khỏe",
+      "state": "ready"
+    },
+    {
+      "n": 42,
+      "q": "Let's/ big cake for/ her birthday/ party./ make a",
+      "a": [
+        "Let's make a big cake for her birthday party."
+      ],
+      "o": [],
+      "en": "Let's takes a base verb: make. Put big before cake.",
+      "vi": "Sau Let's dùng động từ nguyên mẫu: make. Đặt big trước cake.",
+      "c": "a birthday party",
+      "ce": "a party to celebrate someone's birthday",
+      "cv": "tiệc sinh nhật",
+      "state": "ready"
+    },
+    {
+      "n": 43,
+      "q": "Choose the part that needs correcting: Does he brush his teeth and takes a shower every morning?",
+      "a": [
+        "takes"
+      ],
+      "o": [
+        "takes",
+        "a shower",
+        "every",
+        "brush"
+      ],
+      "en": "Does applies to both verbs. Change takes to take.",
+      "vi": "Does dùng chung cho cả hai động từ. Đổi takes thành take.",
+      "c": "take a shower",
+      "ce": "wash your body under running water",
+      "cv": "tắm vòi sen",
+      "state": "ready"
+    },
+    {
+      "n": 44,
+      "q": "Choose the different underlined sound.",
+      "a": [
+        "dislike"
+      ],
+      "o": [
+        "disl<u>i<\/u>ke",
+        "furn<u>i<\/u>ture",
+        "k<u>i<\/u>tchen",
+        "s<u>i<\/u>nk"
+      ],
+      "en": "The marked i in dislike is /aɪ/. The marked vowels in furniture, kitchen and sink are /ɪ/.",
+      "vi": "I được gạch chân trong dislike đọc /aɪ/. Các nguyên âm được gạch chân trong furniture, kitchen và sink đọc /ɪ/.",
+      "c": "kitchen furniture",
+      "ce": "tables, cupboards and similar things in a kitchen",
+      "cv": "đồ nội thất nhà bếp",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 45,
+      "q": "Can anyone swim across this ___ within 30 minutes?",
+      "a": [
+        "river"
+      ],
+      "o": [
+        "valley",
+        "cuisine",
+        "river",
+        "waterfall"
+      ],
+      "en": "A river is a stretch of water you can swim across.",
+      "vi": "River là dòng nước mà bạn có thể bơi từ bờ này sang bờ kia.",
+      "c": "swim across a river",
+      "ce": "swim from one side of a river to the other",
+      "cv": "bơi qua sông",
+      "state": "ready"
+    },
+    {
+      "n": 46,
+      "q": "Do you w___ your school uniform on Monday?",
+      "a": [
+        "wear"
+      ],
+      "o": [],
+      "en": "Wear means have clothes on your body. Type the whole word.",
+      "vi": "Wear nghĩa là mặc. Gõ cả từ.",
+      "c": "wear a school uniform",
+      "ce": "have your school clothes on",
+      "cv": "mặc đồng phục học sinh",
+      "state": "ready"
+    },
+    {
+      "n": 47,
+      "q": "Choose the part that needs correcting: Because she has <u>a backache<\/u>, she <u>go<\/u> to see <u>the doctor<\/u>.",
+      "a": [
+        "go"
+      ],
+      "o": [
+        "Because",
+        "a backache",
+        "go",
+        "the doctor"
+      ],
+      "en": "Change go to goes. With she in the present simple, add -es to go. Because gives the reason.",
+      "vi": "Đổi go thành goes. Với she ở hiện tại đơn, thêm -es vào go. Because nêu lý do.",
+      "c": "see the doctor",
+      "ce": "visit a doctor for medical help",
+      "cv": "đi khám bác sĩ",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 48,
+      "q": "Where did they have ___ lunch last weekend? — At the restaurant near their house.",
+      "a": [
+        "no article"
+      ],
+      "o": [
+        "no article",
+        "an",
+        "the",
+        "a"
+      ],
+      "en": "We normally say have lunch without a, an or the.",
+      "vi": "Ta thường nói have lunch, không thêm a, an hoặc the.",
+      "c": "have lunch",
+      "ce": "eat your midday meal",
+      "cv": "ăn trưa",
+      "state": "ready"
+    },
+    {
+      "n": 49,
+      "q": "They ride their bic___ to school from Monday to Friday.",
+      "a": [
+        "bicycles",
+        "bicycle"
+      ],
+      "o": [],
+      "en": "Bicycles is the expected plural with they and their. Bicycle can refer to one shared bicycle, though that is less likely here. Type the whole word.",
+      "vi": "Bicycles là số nhiều phù hợp với they và their. Bicycle có thể chỉ một xe dùng chung nhưng ít tự nhiên hơn ở đây. Gõ cả từ.",
+      "c": "ride a bicycle",
+      "ce": "travel on a bicycle",
+      "cv": "đi xe đạp",
+      "state": "ready"
+    },
+    {
+      "n": 50,
+      "q": "Mui Ne is famous ___ sweeping sand dunes.",
+      "a": [
+        "for"
+      ],
+      "o": [],
+      "en": "Use be famous for + the thing people know about a place.",
+      "vi": "Dùng be famous for + điều làm một nơi nổi tiếng.",
+      "c": "be famous for",
+      "ce": "be well known because of something",
+      "cv": "nổi tiếng về",
+      "state": "ready"
+    },
+    {
+      "n": 51,
+      "q": "You wear a WAT__ on your wrist to tell the time. Complete the word.",
+      "a": [
+        "watch"
+      ],
+      "o": [],
+      "en": "A watch tells you the time. Type the whole word: watch.",
+      "vi": "Watch là đồng hồ đeo tay, dùng để xem giờ. Gõ cả từ: watch.",
+      "c": "wear a watch",
+      "ce": "have a watch on your wrist",
+      "cv": "đeo đồng hồ",
+      "adapted": true,
+      "state": "ready"
+    },
+    {
+      "n": 52,
+      "q": "The boy is my friend. He is standing over there. The boy ______ ____ standing over there is my friend.",
+      "a": [
+        "who is",
+        "that is"
+      ],
+      "o": [],
+      "en": "Use who is or that is to connect the description to the boy.",
+      "vi": "Dùng who is hoặc that is để nối phần mô tả với the boy.",
+      "c": "over there",
+      "ce": "in that place away from here",
+      "cv": "ở đằng kia",
+      "state": "ready"
+    },
+    {
+      "n": 53,
+      "q": "Quynh can't speak Chinese ___ she can speak Korean.",
+      "a": [
+        "but"
+      ],
+      "o": [
+        "so",
+        "because",
+        "and",
+        "but"
+      ],
+      "en": "But joins two contrasting facts: can't speak Chinese, can speak Korean.",
+      "vi": "But nối hai ý tương phản: không nói được tiếng Trung, nói được tiếng Hàn.",
+      "c": "speak a language",
+      "ce": "use a language to communicate",
+      "cv": "nói một ngôn ngữ",
+      "state": "ready"
+    },
+    {
+      "n": 54,
+      "q": "The sun rises in the E___. Complete the word.",
+      "a": [
+        "east"
+      ],
+      "o": [],
+      "en": "The sun rises in the east. Type the whole word: east.",
+      "vi": "Mặt Trời mọc ở hướng đông. Gõ cả từ: east.",
+      "c": "rise in the east",
+      "ce": "appear in the sky in the east in the morning",
+      "cv": "mọc ở hướng đông",
+      "adapted": true,
+      "state": "ready"
+    }
+  ]
+]</script>
+<script>
+'use strict';
+const TESTS=JSON.parse(document.getElementById('question-data').textContent);
+const $=s=>document.querySelector(s),escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const rich=s=>escapeHtml(s).replace(/&lt;u&gt;/g,'<u>').replace(/&lt;\/u&gt;/g,'</u>').replace(/\\n/g,'\n');
+const plain=s=>s.replace(/<\/?u>/g,'');
+let state={version:2,test:0,positions:[0,0,0],vn:false,answers:[{},{},{}],stars:[{},{},{}]},storageOK=true;
+try{const v=JSON.parse(localStorage.getItem('abhi-uyen-ioe-complete-v2'));if(v&&v.version===2&&Array.isArray(v.answers)&&v.answers.length===3&&v.positions?.length===3&&v.stars?.length===3)state=v;}catch(e){storageOK=false;}
+state.test=Number.isInteger(state.test)&&state.test>=0&&state.test<3?state.test:0;
+for(let t=0;t<3;t++){if(!state.answers[t]||typeof state.answers[t]!=='object')state.answers[t]={};if(!state.stars[t]||typeof state.stars[t]!=='object')state.stars[t]={};if(!Number.isInteger(state.positions[t])||state.positions[t]<0||state.positions[t]>=TESTS[t].length)state.positions[t]=0;}
+if(typeof state.sound!=='boolean')state.sound=true;
+let mode='practice',filter='all',selected=null,draft='',used=[],showCorrection=false;
+const current=()=>TESTS[state.test][state.positions[state.test]],record=()=>state.answers[state.test][current().n];
+function save(){try{localStorage.setItem('abhi-uyen-ioe-complete-v2',JSON.stringify(state));}catch(e){storageOK=false;}$('#storageHint').textContent=storageOK?'Progress saves automatically on this device.':'Progress is available for this visit. Browser storage is unavailable.';}
+let audioContext=null, feedbackSources=[],soundGeneration=0;
+function stopFeedback(){soundGeneration++;for(const node of feedbackSources){try{node.stop();}catch(e){}}feedbackSources=[];}
+async function playFeedback(correct){
+ if(!state.sound)return;
+ stopFeedback();const generation=soundGeneration;
+ try{
+  const Context=window.AudioContext||window.webkitAudioContext;
+  if(!Context)return;
+  if(!audioContext||audioContext.state==='closed')audioContext=new Context();
+  if(audioContext.state==='suspended')await audioContext.resume();
+  if(generation!==soundGeneration||!state.sound||audioContext.state!=='running')return;
+  const start=audioContext.currentTime+.012;
+  const notes=correct?[[523.25,0,.12],[659.25,.12,.12],[783.99,.24,.17]]:[[329.63,0,.13],[246.94,.14,.19]];
+  for(const [frequency,offset,duration] of notes){
+   const oscillator=audioContext.createOscillator(),gain=audioContext.createGain(),at=start+offset;
+   oscillator.type='sine';oscillator.frequency.setValueAtTime(frequency,at);
+   gain.gain.setValueAtTime(.0001,at);gain.gain.exponentialRampToValueAtTime(.065,at+.015);gain.gain.exponentialRampToValueAtTime(.0001,at+duration);
+   oscillator.connect(gain);gain.connect(audioContext.destination);feedbackSources.push(oscillator);
+   oscillator.onended=()=>{oscillator.disconnect();gain.disconnect();feedbackSources=feedbackSources.filter(n=>n!==oscillator);};
+   oscillator.start(at);oscillator.stop(at+duration+.015);
+  }
+ }catch(e){/* Text feedback remains available if browser audio is unavailable. */}
+}
+function normalize(s){return String(s).normalize('NFKC').toLowerCase().replace(/[’‘]/g,"'").replace(/\bi'm\b/g,'i am').replace(/\bwe're\b/g,'we are').replace(/\bthey're\b/g,'they are').replace(/\byou're\b/g,'you are').replace(/\bcan't\b/g,'cannot').replace(/\bdon't\b/g,'do not').replace(/\bdoesn't\b/g,'does not').replace(/\bshouldn't\b/g,'should not').replace(/\bmustn't\b/g,'must not').replace(/\bisn't\b/g,'is not').replace(/\bprogram\b/g,'programme').replace(/\bfavorite\b/g,'favourite').replace(/[^\p{L}\p{N}\s]/gu,' ').replace(/\s+/g,' ').trim();}
+function valid(q,value){return q.a.some(a=>normalize(a)===normalize(value));}
+function hasTried(q){return !!state.answers[state.test][q.n];}
+function stats(){const t=TESTS[state.test],a=state.answers[state.test],ready=t.filter(q=>q.state==='ready');return {total:t.length,ready:ready.length,checked:t.filter(q=>a[q.n]).length,correct:ready.filter(q=>a[q.n]?.first===true).length,attempted:ready.filter(q=>a[q.n]).length};}
+function renderShell(){$('#sound').textContent=state.sound?'♫ Sound on':'♫ Sound off';$('#sound').setAttribute('aria-pressed',String(state.sound));$('#sound').setAttribute('aria-label',state.sound?'Turn sound off':'Turn sound on');document.body.classList.toggle('show-vi',state.vn);$('#lang').setAttribute('aria-pressed',String(state.vn));$('#lang').setAttribute('aria-label',state.vn?'Hide Vietnamese translations':'Show Vietnamese translations');$('#tests').innerHTML=TESTS.map((t,i)=>`<button role="tab" aria-selected="${i===state.test}" class="test-tab" data-test="${i}"><strong>Test ${String(i+1).padStart(2,'0')}</strong><small>${t.length} questions</small><span class="tab-tick" aria-hidden="true">${i===state.test?'↗':'·'}</span></button>`).join('');$('#tests').querySelectorAll('button').forEach(b=>b.onclick=()=>switchTest(Number(b.dataset.test)));const s=stats();$('#score').innerHTML=`<strong>${s.correct}<span style="font-size:18px"> / ${s.ready}</span></strong><span>first try</span>`;$('#progressText').textContent=`${s.checked} of ${s.total} checked${s.total-s.ready?` · ${s.total-s.ready} need review`:''}`;$('#meter').style.width=`${s.checked/s.total*100}%`;$('#progress').setAttribute('aria-valuenow',String(Math.round(s.checked/s.total*100)));$('#practiceTab').classList.toggle('active',mode==='practice');$('#wordsTab').classList.toggle('active',mode==='words');$('#gridArea').classList.toggle('hide',mode==='words');renderGrid();}
+function matches(q){const r=state.answers[state.test][q.n];return filter==='all'||filter==='todo'&&!r||filter==='wrong'&&r&&q.state==='ready'&&!r.correct||filter==='special'&&q.state!=='ready';}
+function renderGrid(){const t=TESTS[state.test];$('#grid').innerHTML=t.map((q,i)=>{const r=state.answers[state.test][q.n];return `<button class="dot ${q.state!=='ready'?'special':''} ${i===state.positions[state.test]?'current':''} ${r?(q.state!=='ready'?'reviewed':r.correct?'correct':'wrong'):''} ${matches(q)?'':'hide'}" data-index="${i}" aria-label="Question ${q.n}${q.state==='audio'?', needs audio':q.state==='review'?', needs review':r? r.correct?', correct':', try again':''}" ${i===state.positions[state.test]?'aria-current="true"':''}>${q.n}</button>`}).join('');$('#grid').querySelectorAll('button').forEach(b=>b.onclick=()=>go(Number(b.dataset.index)));}
+function kind(q){return q.state==='audio'?'Needs audio':q.state==='review'?'Review with teacher':q.o.length?(q.o.length===2?'True / False':'Choose one'):isBuilder(q)?'Build the sentence':/\b[a-zA-Z]+_{2,}[a-zA-Z]*\b/.test(q.q)&& !q.q.includes('___ ')?'Complete the word':'Complete the sentence';}
+function isBuilder(q){return q.state==='ready'&&!q.o.length&&q.q.includes('/')&&!q.q.includes('___');}
+function chunks(q){const p=q.chunks?[...q.chunks]:q.q.split('/').map(x=>x.trim()).filter(Boolean);let seed=q.n*23+state.test*7;for(let i=p.length-1;i>0;i--){seed=(seed*9301+49297)%233280;const j=seed%(i+1);[p[i],p[j]]=[p[j],p[i]];}if(normalize(p.join(' '))===normalize(q.a[0]||''))p.reverse();return p;}
+function vi(text){return `<p class="vi" lang="vi">${escapeHtml(text)}</p>`;}
+function feedback(q,r){if(!r)return '';const special=q.state!=='ready';return `<div class="feedback ${special?'review':r.correct?'':'wrong'}" id="feedback" role="region" aria-label="Answer and explanation"><div class="result-title">${special?'Review note':r.correct?'✓ Well done.':'↻ Keep learning.'}</div>${special?'':`<div class="answer-line"><strong>${q.a.length>1?'Accepted answers':'Answer'}:</strong> ${q.a.map(a=>escapeHtml(a)).join(' / ')}</div>`}<p>${escapeHtml(q.en)}</p>${vi(q.vi)}${q.adapted?`<p class="adaptation">Practice adaptation · context or wording completed.</p>${vi('Bản luyện tập đã bổ sung ngữ cảnh hoặc chỉnh câu để có đáp án rõ ràng.')}`:''}${q.c?`<div class="note"><button class="star" id="star" aria-pressed="${!!state.stars[state.test][q.n]}">${state.stars[state.test][q.n]?'✓ Saved':'+ Save'}</button><span class="micro">Word note</span><strong>${escapeHtml(q.c)}</strong><p>${escapeHtml(q.ce)}</p>${vi(q.cv)}</div>`:''}${!special&&!r.correct?'<button class="secondary" id="retry" style="margin-top:16px">Try this question again</button>':''}</div>`;}
+function renderQuestion(){const q=current(),r=record(),t=TESTS[state.test],idx=state.positions[state.test],s=stats(),locked=!!r&&!showCorrection;let body='';const full=rich(q.q);const lines=full.split('\n');if(lines.length>1)body=`<div class="passage">${lines.slice(0,-1).join('\n')}</div><div class="question">${lines.at(-1)}</div>`;else body=`<div class="question">${isBuilder(q)?'Put the chunks in order.':full}${q.img?`<img src="${q.img}" alt="${q.n===2?'A tube of suncream':'A boy and a shorter girl standing together'}">`:''}</div>`;
+const special=q.state!=='ready';let input='';if(!special){if(q.o.length)input=`<div class="choices" role="group" aria-label="Answer choices">${q.o.map((o,i)=>`<button type="button" class="choice ${selected===i?'selected':''} ${locked&&q.a.some(a=>normalize(a)===normalize(plain(o)))?'good':''} ${locked&&r.choice===i&&!r.correct?'bad':''}" data-choice="${i}" aria-pressed="${selected===i}" ${locked?'disabled':''}><span class="letter">${q.o.length===2?'·':String.fromCharCode(65+i)}</span><span>${rich(o)}</span></button>`).join('')}</div>`;else input=`<div class="entry">${isBuilder(q)?`<p class="directions">Tap the chunks, or type your sentence.${q.hint?` ${escapeHtml(q.hint)}`:''}</p>${vi('Chọn các cụm theo thứ tự, hoặc tự gõ câu.')}<div class="builder">${chunks(q).map((c,i)=>`<button class="chunk" data-chunk="${i}" ${locked||used.includes(i)?'disabled':''}>${escapeHtml(c)}</button>`).join('')}</div>`:`<p class="directions">${/\b[a-zA-Z]+_{2,}[a-zA-Z]*\b/.test(q.q)?'For an incomplete word, type the whole word.':'Type the missing word or phrase. For two gaps, separate your answers with a space.'}</p>${vi('Nếu từ bị khuyết chữ, gõ cả từ. Với hai chỗ trống, ngăn hai đáp án bằng dấu cách.')}`}<label class="sr-only" for="answer">Your answer</label><input class="field" id="answer" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Your answer…" value="${escapeHtml(locked?r.value:draft)}" ${locked?'disabled':''}>${isBuilder(q)&&!locked?'<div class="builder-tools"><button class="text-btn" id="undo">Undo</button><button class="text-btn" id="clear">Clear</button></div>':''}</div>`;}
+$('#workspace').innerHTML=`${s.checked===s.total?`<div class="completion">Test complete · ${s.correct} / ${s.ready} on your first try. Review your word notes, or practise again.${vi('Đã xem hết đề. Ôn ghi chú từ vựng hoặc luyện lại các câu.')}</div>`:''}<article class="panel"><div class="panel-bar"><span class="micro">Test ${String(state.test+1).padStart(2,'0')} · Question ${String(q.n).padStart(2,'0')}</span><span class="tag">${kind(q)}</span></div>${body}${input}${special?`<p class="status-note">${q.state==='audio'?'No recording is attached for this item.':'This item needs extra context or has more than one possible answer.'} Not included in the score.</p>${vi('Câu này chưa đủ dữ kiện hoặc chưa có đáp án duy nhất nên không tính điểm.')}`:''}<div class="actions"><p class="reduced">${idx+1} of ${t.length}</p><button class="primary" id="check" ${locked?'disabled':''}>${special?'Read note':locked?'Checked':'Check answer'}</button></div>${locked?feedback(q,r):''}</article><div class="nav-row"><button class="secondary" id="prev" ${idx===0?'disabled':''}>← Previous</button><span>${s.attempted} answers checked · ${s.ready} scored items</span><button class="secondary" id="next" ${idx===t.length-1?'disabled':''}>Next →</button></div>`;
+$('#check').onclick=submit;$('#prev').onclick=()=>go(idx-1);$('#next').onclick=()=>go(idx+1);document.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>{selected=Number(b.dataset.choice);renderQuestion();$('#check').focus();});const field=$('#answer');if(field){field.oninput=()=>{draft=field.value;used=[];document.querySelectorAll('[data-chunk]').forEach(b=>b.disabled=false);};field.onkeydown=e=>{if(e.key==='Enter'){e.preventDefault();submit();}};}
+document.querySelectorAll('[data-chunk]').forEach(b=>b.onclick=()=>{const i=Number(b.dataset.chunk);used.push(i);draft=used.map(j=>chunks(q)[j]).join(' ');renderQuestion();});if($('#undo'))$('#undo').onclick=()=>{used.pop();draft=used.map(j=>chunks(q)[j]).join(' ');renderQuestion();};if($('#clear'))$('#clear').onclick=()=>{used=[];draft='';renderQuestion();};if($('#retry'))$('#retry').onclick=()=>{showCorrection=true;selected=null;draft='';used=[];renderQuestion();};if($('#star'))$('#star').onclick=()=>{state.stars[state.test][q.n]=!state.stars[state.test][q.n];save();renderQuestion();};}
+function submit(){const q=current(),special=q.state!=='ready';let value=special?'':q.o.length?(selected===null?'':plain(q.o[selected])):($('#answer')?.value||draft);if(!special&&!value.trim()){announce('Choose or type an answer first.');if($('#answer'))$('#answer').focus();return;}const prev=record(),correct=special?null:valid(q,value);if(!special)void playFeedback(correct);state.answers[state.test][q.n]={value,choice:selected,first:prev?prev.first:correct,correct,attempts:(prev?.attempts||0)+1};showCorrection=false;save();renderShell();renderQuestion();announce(special?'Review note opened.':correct?'Correct. Explanation is ready.':'Answer checked. Read the explanation and try again.');}
+function announce(s){$('#live').textContent='';setTimeout(()=>$('#live').textContent=s,20);}
+function go(i){if(i<0||i>=TESTS[state.test].length)return;state.positions[state.test]=i;mode='practice';resetDraft();save();render();if(window.innerWidth<641)$('#workspace').scrollIntoView({block:'start'});}
+function resetDraft(){const r=record();selected=r?.choice??null;draft=r?.value||'';used=[];showCorrection=false;}
+function switchTest(t){state.test=t;mode='practice';filter='all';$('#filter').value='all';resetDraft();save();render();}
+function renderWords(){const t=TESTS[state.test],notes=t.filter(q=>q.c&&hasTried(q)),saved=notes.filter(q=>state.stars[state.test][q.n]);$('#workspace').innerHTML=`<article class="panel"><div class="review-top"><div><p class="micro">Small notes, useful English</p><h2 style="margin-top:8px">Word notes <span style="font-size:15px;color:var(--muted)">${notes.length}</span></h2></div><button class="secondary" id="backPractice">Back to practice</button></div><p class="reduced" style="margin-bottom:20px">Notes appear after you check a question.</p>${vi('Ghi chú xuất hiện sau khi em kiểm tra câu trả lời.')}<label class="sr-only" for="wordFilter">Filter word notes</label><select id="wordFilter" style="max-width:200px;margin:0 0 20px"><option value="all">All learned notes (${notes.length})</option><option value="saved">Saved notes (${saved.length})</option></select><div class="word-list" id="wordList"></div></article>`;function drawNotes(){const show=$('#wordFilter').value==='saved'?saved:notes;$('#wordList').innerHTML=show.length?show.map(q=>`<div class="word-card"><small>QUESTION ${q.n}</small><h3>${escapeHtml(q.c)}</h3><p>${escapeHtml(q.ce)}</p>${vi(q.cv)}<button class="text-btn note-link" data-index="${t.indexOf(q)}" style="margin-top:13px">View question →</button></div>`).join(''):'<div class="empty"><h3>No notes yet.</h3><p>Check a question, then save a word note.</p></div>';document.querySelectorAll('.note-link').forEach(b=>b.onclick=()=>go(Number(b.dataset.index)));}$('#wordFilter').onchange=drawNotes;drawNotes();$('#backPractice').onclick=()=>{mode='practice';render();};}
+function render(){renderShell();if(mode==='words')renderWords();else renderQuestion();}
+$('#sound').onclick=()=>{state.sound=!state.sound;if(!state.sound)stopFeedback();save();renderShell();};$('#lang').onclick=()=>{state.vn=!state.vn;save();renderShell();};$('#practiceTab').onclick=()=>{mode='practice';render();};$('#wordsTab').onclick=()=>{mode='words';render();};$('#filter').onchange=e=>{filter=e.target.value;renderGrid();$('#gridWrap').classList.remove('collapsed');$('#toggleGrid').setAttribute('aria-expanded','true');};$('#toggleGrid').onclick=()=>{const e=$('#gridWrap').classList.toggle('collapsed');$('#toggleGrid').setAttribute('aria-expanded',String(!e));$('#toggleGrid').textContent=e?'Questions ↓':'Questions ↑';};$('#reset').onclick=()=>$('#resetDialog').showModal();$('#cancelReset').onclick=()=>$('#resetDialog').close();$('#confirmReset').onclick=()=>{state.answers[state.test]={};state.stars[state.test]={};state.positions[state.test]=0;mode='practice';filter='all';$('#filter').value='all';resetDraft();save();render();$('#resetDialog').close();};document.querySelector('#tests').onkeydown=e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const t=(state.test+(e.key==='ArrowRight'?1:2))%3;switchTest(t);document.querySelector(`[data-test="${t}"]`).focus();}};
+resetDraft();save();render();
+</script></body></html>
